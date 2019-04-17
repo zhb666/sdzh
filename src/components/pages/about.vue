@@ -10,7 +10,8 @@
         <h3 class="banner_h3 animated fadeInLeft">ABOUT AS</h3>
         <p class="banner_h1 animated fadeInRightBig">
           水滴智慧科技（深圳）有限公司于2013年05月30日成立，是一家智慧校园解决方案与工具提供商。其研发团队主要由原谷歌和华为研发人员组建，致力从事智慧教室一体化解决方案的研发、生产和销售，为全国大中专院校、中小学、教育机构、企业培训等信息化发展需求提供技术支持。</p>
-        <p class="banner_h1 animated fadeInRightBig">在转型做互联网智慧教育市场不到一年的时间里，水滴智慧已建立深圳、东莞、北京、海南、山西、湖南、安徽等营销中心，服务客户逾两百家。</p>
+        <p class="banner_h1 animated fadeInRightBig">
+          在转型做互联网智慧教育市场不到一年的时间里，水滴智慧已建立深圳、东莞、北京、海南、山西、湖南、安徽等营销中心，服务客户逾两百家。</p>
         <div class="Btns"></div>
       </div>
 
@@ -25,15 +26,19 @@
           <ul class="aboutImgList">
             <li>
               <img src="../../../static/common/images/aboutImg1.png" alt="">
+              <p>企业信用等级证书</p>
             </li>
             <li>
               <img src="../../../static/common/images/aboutImg2.png" alt="">
+              <p>ISO认证证书</p>
             </li>
             <li>
               <img src="../../../static/common/images/aboutImg2.png" alt="">
+              <p>ISO认证证书</p>
             </li>
             <li>
               <img src="../../../static/common/images/aboutImg3.png" alt="">
+              <p>OHSAS认证证书</p>
             </li>
           </ul>
 
@@ -43,8 +48,65 @@
       <div class="about_lishi">
         <div class="about_lishiMain w1200">
           <h6>发展历史</h6>
+
+          <div class="about_lianxi">
+            <ul>
+              <li>
+                <div class="about_liline"></div>
+                <h5>联系我们</h5>
+                <p>电话：0755-26640295</p>
+                <p>邮箱：waterdrop@shuidizhihui.com </p>
+                <p>微信:</p>
+                <img src="../../../static/common/images/l_erweima.png" alt="" class="dinwgeis">
+              </li>
+              <li>
+                <div class="about_liline"></div>
+                <h5 style="margin-bottom: 20px;">全国地址</h5>
+                <p>深圳（总部）：南山区高新科技园虚拟大学院综合楼C区2楼202室</p>
+                <p>深圳（工厂）：龙岗区布澜路21号联创科技园2期30栋</p>
+                <p>北京：海淀区清华科技园玉泉慧谷10栋A座1楼</p>
+                <p>海南：海口市美兰区海南科技职业学院图书馆9楼</p>
+                <p>东莞：南城区中天联科国际信息产业园8栋303</p>
+                <p>山西：太原市小店区平阳南路天鑫花园一单元1401</p>
+                <p>安徽：合肥市庐阳区颖上路505号领域花园1,2幢商261</p>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="about_line"></div>
+
+        <div class="about_date about_s1">
+          <h4>2013</h4>
+          <p>公司成立</p>
+        </div>
+        <div class="about_date about_s2">
+          <h4>2018</h4>
+          <p>北京营销中心成立</p>
+        </div>
+        <div class="about_date about_s3">
+          <h4>2018</h4>
+          <p>负责海南科技职业学校</p>
+        </div>
+        <div class="about_date about_s4">
+          <h4>2018</h4>
+          <p>山西营销中心成立</p>
+        </div>
+        <div class="about_date about_s5">
+          <h4>2018</h4>
+          <p>东莞营销中心成立</p>
+        </div>
+        <div class="about_date about_s6">
+          <h4>2018</h4>
+          <p>进军智慧教育市场</p>
+        </div>
+        <div class="about_date about_s7">
+          <h4>2018</h4>
+          <p>山西展会</p>
+        </div>
+        <div class="about_date about_s8">
+          <h4>2018</h4>
+          <p>向海南小学捐赠</p>
+        </div>
       </div>
 
 
@@ -102,6 +164,7 @@
     position: relative;
     overflow: hidden;
   }
+
   .solve_img img {
     position: absolute;
     left: 0;
@@ -112,11 +175,11 @@
     z-index: -1;
   }
 
-  .solve_img p{
+  .solve_img p {
     color: white;
     font-size: 24px;
     text-indent: 45px;
-    font-family:PingFangSC-Regular;
+    font-family: PingFangSC-Regular;
     width: 888px;
     margin: 20px auto;
     text-align: left;
@@ -138,34 +201,39 @@
     animation-delay: .5s;
     text-align: center;
   }
-  .Btns{
+
+  .Btns {
     width: 148px;
     height: 41px;
     background: url('../../../static/common/images/gy_gk.png') no-repeat;
     margin: 50px auto;
     cursor: pointer;
   }
-  .aboutList{
+
+  .aboutList {
     width: 100%;
     height: 1024px;
     background: url('../../../static/common/images/gy_listiMG1.png') no-repeat;
     overflow: hidden;
   }
-  .aboutListMian >h6{
+
+  .aboutListMian > h6 {
     font-size: 30px;
     color: #373737;
-    font-family:ArialMT;
+    font-family: ArialMT;
     text-align: center;
-    margin: 136px 0 30px 0;
+    margin: 118px 0 30px 0;
   }
-  .aboutListMian >p{
+
+  .aboutListMian > p {
     font-size: 30px;
     color: #373737;
-    font-family:ArialMT;
+    font-family: ArialMT;
     margin-left: 200px;
     margin-top: 10px;
   }
-  .aboutImgList{
+
+  .aboutImgList {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -173,34 +241,140 @@
     justify-content: left;
     margin-top: 60px;
   }
-  .aboutImgList li{
+
+  .aboutImgList li {
     width: 269px;
-    height: 354px;
+    height: 398px;
     margin-left: 16px;
   }
-  .about_lishi{
+
+  .aboutImgList li p {
+    color: #454545;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about_lishi {
     width: 100%;
     height: 1282px;
     background: url('../../../static/common/images/about_bgs.png') no-repeat;
     overflow: hidden;
     position: relative;
   }
-  .about_lishiMain{
+
+  .about_lishiMain {
     position: relative;
   }
-  .about_lishiMain >h6{
+
+  .about_lishiMain > h6 {
     color: white;
     font-size: 39px;
     text-align: center;
-    font-family:ArialMT;
-    margin:75px 0 150px 0 ;
+    font-family: ArialMT;
+    margin: 75px 0 150px 0;
   }
-  .about_line{
+
+  .about_line {
     width: 994px;
     height: 21px;
     background: url('../../../static/common/images/about_line.png') no-repeat;
     position: absolute;
     top: 434px;
     left: 480px;
+  }
+
+  .about_date {
+    width: 190px;
+    height: 80px;
+    position: absolute;
+    /*background: red;*/
+  }
+
+  .about_date h4 {
+     color: white;
+     font-size: 39px;
+     font-family: Arial-BoldMT;
+   }
+  .about_date p {
+    color: white;
+    font-size: 18px;
+    font-family:PingFangSC-Regular;
+  }
+  .about_s1{
+    left: 450px;
+    top: 480px;
+  }
+  .about_s2{
+    left: 560px;
+    top: 320px;
+  }
+  .about_s3{
+    left: 820px;
+    top: 320px;
+  }
+  .about_s4{
+    left: 1120px;
+    top: 320px;
+  }
+  .about_s5{
+    left: 720px;
+    top: 480px;
+  }
+  .about_s6{
+    left: 1000px;
+    top: 480px;
+  }
+  .about_s7{
+    left: 1280px;
+    top: 480px;
+  }
+  .about_s8{
+    left: 1420px;
+    top: 480px;
+  }
+  .about_lianxi{
+    width: 100%;
+    height: 380px;
+    /*background: red;*/
+    margin-top: 680px;
+  }
+  .about_lianxi ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+  }
+  .about_lianxi ul li{
+    width: 550px;
+    height: 372px;
+    border-radius: 8px;
+    background: rgba(64,129,244,.6);
+    margin-right: 52px;
+    position: relative;
+    padding: 42px;
+    box-sizing: border-box;
+  }
+  .about_liline{
+    height:3px ;
+    width: 50px;
+    background: white;
+  }
+  .about_lianxi ul li h5{
+    font-size: 26px;
+    color: white;
+    margin: 52px 0 40px 0;
+    font-weight: normal;
+  }
+  .about_lianxi ul li p{
+    font-size: 15px;
+    color: white;
+    line-height: 24px;
+    font-family:ArialMT;
+  }
+  .dinwgeis{
+    position: absolute;
+    right: 60px;
+    top: 116px;
   }
 </style>

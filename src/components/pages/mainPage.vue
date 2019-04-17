@@ -845,6 +845,7 @@
   .po1 {
     left: 700px;
     top: 130px;
+    display: block;
     /*display: block;*/
   }
 

@@ -40,9 +40,7 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requireAuth)){  // 判断该路由是否需要登录权限
     if (store.state.isLogin) {  // 判断当前的token是否存在
       // console.log('登录信息正确的')
-
       document.title = to.meta.title
-
       next();
     }
     else {

@@ -22,96 +22,96 @@ export default new Router({
       path: '/',
       name: 'MainPage',
       component: MainPage,
-      meta:{
-        title : '首页'
+      meta: {
+        title: '首页'
       }
     },
     {
       path: '/solve',
       name: 'Solve',
       component: Solve,
-      meta:{
-        title : '常态智慧'
+      meta: {
+        title: '常态智慧'
       }
     },
     {
       path: '/Interaction',
       name: 'Interaction',
       component: Interaction,
-      meta:{
-        title : '互动智慧'
+      meta: {
+        title: '互动智慧'
       }
     },
     {
       path: '/train',
       name: 'Train',
       component: Train,
-      meta:{
-        title : '实训智慧'
+      meta: {
+        title: '实训智慧'
       }
     },
     {
       path: '/manyCj',
       name: 'ManyCj',
       component: ManyCj,
-      meta:{
-        title : '多场景智慧'
+      meta: {
+        title: '多场景智慧'
       }
     },
     {
       path: '/campus',
       name: 'Campus',
       component: Campus,
-      meta:{
-        title : '智慧校园'
+      meta: {
+        title: '智慧校园'
       }
     },
     {
       path: '/introduce',
       name: 'Introduce',
       component: Introduce,
-      meta:{
-        title : '产品介绍'
+      meta: {
+        title: '产品介绍'
       }
     },
     {
       path: '/download',
       name: 'Download',
       component: Download,
-      meta:{
-        title : '下载中心'
+      meta: {
+        title: '下载中心'
       }
     },
     {
       path: '/exhibition',
       name: 'Exhibition',
       component: Exhibition,
-      meta:{
-        title : '案例展示'
+      meta: {
+        title: '案例展示'
       }
     },
     {
       path: '/information',
       name: 'Information',
       component: Information,
-      meta:{
-        title : '资讯中心'
+      meta: {
+        title: '资讯中心'
       }
     },
     {
       path: '/InFoDetails',
       name: 'InFoDetails',
       component: InFoDetails,
-      meta:{
-        title : '资讯详情'
+      meta: {
+        title: '资讯详情'
       }
     },
     {
       path: '/about',
       name: 'About',
       component: About,
-      meta:{
-        title : '关于我们'
+      meta: {
+        title: '关于我们'
       }
     },
   ],
