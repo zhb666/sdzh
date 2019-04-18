@@ -38,13 +38,17 @@ body {
   margin: 0 auto;
   position: relative; }
 
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+
 input[type="button"],input[type="submit"],input[type="reset"]{ -webkit-appearance:none; appearance:none; outline:none;}/*去除input默认样式*/
 
 html, body {
   width: 100%;
   height:auto;
-  overflow-x: hidden;
-  min-width: 1400px;
+  /*overflow-x: hidden;*/
+  min-width: 1300px;
   position: relative;
 }/*重置css end*/
 

@@ -2,10 +2,10 @@
 
   <div class="solve">
 
-    <div class="solve_main animated fadeInLeft">
+    <div class="solve_main">
 
       <div class="solve_img">
-        <img src="../../../static/common/images/zx_bg.png" alt=""/>
+        <!--<img src="../../../static/common/images/zx_bg.png" alt=""/>-->
         <h1 class="banner_h1 animated fadeInLeft">案例展示</h1>
         <h3 class="banner_h3 animated fadeInLeft">CASE PRESENTATION</h3>
       </div>
@@ -74,8 +74,10 @@
   .solve_img {
     width: 100%;
     height: 532px;
+    background: url('../../../static/common/images/zx_bg.png') center no-repeat;
     position: relative;
     overflow: hidden;
+    background-size: cover;
   }
 
   .solve_img img {

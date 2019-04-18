@@ -2,10 +2,10 @@
 
   <div class="solve">
 
-    <div class="solve_main animated fadeInLeft">
+    <div class="solve_main">
 
       <div class="solve_img">
-        <img src="../../../static/common/images/solve_img.png" alt=""/>
+        <!--<img src="../../../static/common/images/solve_img.png" alt=""/>-->
         <h1 class="banner_h1 animated fadeInLeft">常态教室解决方案</h1>
         <h3 class="banner_h3 animated fadeInLeft">以信息化技术助力提升教学质量</h3>
       </div>
@@ -84,27 +84,28 @@
       <!--资讯-->
       <div class="information">
         <div class="information_box w1200">
-          <h2>资讯中心</h2>
+          <h2>案例介绍</h2>
 
           <ul class="showLines">
             <li>
               <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
+              <h6>海南省海口新埠中心小学</h6>
+              <p>花费与传统多媒体设备不相上下的成本，建立无尘化无辐射的教学环境，全面保护师生健康，并辅助提高教学效率，丰富教学内容，让学生学习更加积极有效。</p>
               <div class="lines"></div>
               <div class="lines_bottom"></div>
             </li>
             <li>
               <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
+              <h6>山西省长治市沁源县太岳中学</h6>
+              <p>从传统教学迈入信息化教学，改善师生教学环境，为教学提质减负。</p>
               <div class="lines"></div>
               <div class="lines_bottom"></div>
             </li>
             <li>
               <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
+              <h6>合肥市常春藤实验学校</h6>
+              <p>国际化教学配备先进的信息化技术教学设备，让教学更显卓越质量。
+              </p>
               <div class="lines"></div>
               <div class="lines_bottom"></div>
             </li>
@@ -167,30 +168,32 @@
   .solve_img {
     width: 100%;
     height: 532px;
+    background: url('../../../static/common/images/solve_img.png') center no-repeat;
     position: relative;
     overflow: hidden;
-  }
-
-  .solve_img img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background-size: cover;
   }
+
+  /*.solve_img img {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-size: cover;*/
+  /*}*/
 
   .banner_h1 {
     font-size: 49px;
     color: #fff;
-    margin: 208px 0 0 524px;
+    margin: 208px 0 0 20%;
     font-weight: normal;
   }
 
   .banner_h3 {
     font-size: 22px;
     color: #fff;
-    margin: 10px 0 0 524px;
+    margin: 10px 0 0 20%;
     font-weight: normal;
     animation-delay: .5s;
   }
@@ -215,8 +218,9 @@
 
   .solve_imgListMian ul li {
     text-align: center;
-    margin: 80px 0 0 100px;
+    margin: 80px 0 0 90px;
     color: #555;
+    width: 312px;
   }
 
   .solve_imgListMian ul li img {
@@ -226,6 +230,7 @@
   .solve_imgListMian ul li h6 {
     font-size: 24px;
     margin-bottom: 10px;
+font-weight: normal;
   }
 
   .solve_imgListMian ul li p {
@@ -309,6 +314,8 @@
   .information_box ul li p{
     font-size: 16px;
     color: #535353;
+    text-align: left;
+    text-indent: 16px;
     margin-bottom: 12px;
     height: 88px;
     width: 100%;

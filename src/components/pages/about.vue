@@ -2,17 +2,17 @@
 
   <div class="solve">
 
-    <div class="solve_main animated fadeInLeft">
+    <div class="solve_main">
 
       <div class="solve_img">
-        <img src="../../../static/common/images/gy_bg.png" alt=""/>
+        <!--<img src="../../../static/common/images/gy_bg.png" alt=""/>-->
         <h1 class="banner_h1 animated fadeInLeft">关于我们</h1>
         <h3 class="banner_h3 animated fadeInLeft">ABOUT AS</h3>
         <p class="banner_h1 animated fadeInRightBig">
           水滴智慧科技（深圳）有限公司于2013年05月30日成立，是一家智慧校园解决方案与工具提供商。其研发团队主要由原谷歌和华为研发人员组建，致力从事智慧教室一体化解决方案的研发、生产和销售，为全国大中专院校、中小学、教育机构、企业培训等信息化发展需求提供技术支持。</p>
         <p class="banner_h1 animated fadeInRightBig">
           在转型做互联网智慧教育市场不到一年的时间里，水滴智慧已建立深圳、东莞、北京、海南、山西、湖南、安徽等营销中心，服务客户逾两百家。</p>
-        <div class="Btns"></div>
+        <div class="Btns animated fadeInLeft"></div>
       </div>
 
       <div class="aboutList">
@@ -69,44 +69,45 @@
                 <p>东莞：南城区中天联科国际信息产业园8栋303</p>
                 <p>山西：太原市小店区平阳南路天鑫花园一单元1401</p>
                 <p>安徽：合肥市庐阳区颖上路505号领域花园1,2幢商261</p>
+                <p>湖北：武汉市洪山区鲁磨路306号中建大厦1902号</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="about_line"></div>
+        <!--<div class="about_line"></div>-->
 
-        <div class="about_date about_s1">
-          <h4>2013</h4>
-          <p>公司成立</p>
-        </div>
-        <div class="about_date about_s2">
-          <h4>2018</h4>
-          <p>北京营销中心成立</p>
-        </div>
-        <div class="about_date about_s3">
-          <h4>2018</h4>
-          <p>负责海南科技职业学校</p>
-        </div>
-        <div class="about_date about_s4">
-          <h4>2018</h4>
-          <p>山西营销中心成立</p>
-        </div>
-        <div class="about_date about_s5">
-          <h4>2018</h4>
-          <p>东莞营销中心成立</p>
-        </div>
-        <div class="about_date about_s6">
-          <h4>2018</h4>
-          <p>进军智慧教育市场</p>
-        </div>
-        <div class="about_date about_s7">
-          <h4>2018</h4>
-          <p>山西展会</p>
-        </div>
-        <div class="about_date about_s8">
-          <h4>2018</h4>
-          <p>向海南小学捐赠</p>
-        </div>
+        <!--<div class="about_date about_s1">-->
+          <!--<h4>2013</h4>-->
+          <!--<p>公司成立</p>-->
+        <!--</div>-->
+        <!--<div class="about_date about_s2">-->
+          <!--<h4>2018</h4>-->
+          <!--<p>北京营销中心成立</p>-->
+        <!--</div>-->
+        <!--<div class="about_date about_s3">-->
+          <!--<h4>2018</h4>-->
+          <!--<p>负责海南科技职业学校</p>-->
+        <!--</div>-->
+        <!--<div class="about_date about_s4">-->
+          <!--<h4>2018</h4>-->
+          <!--<p>山西营销中心成立</p>-->
+        <!--</div>-->
+        <!--<div class="about_date about_s5">-->
+          <!--<h4>2018</h4>-->
+          <!--<p>东莞营销中心成立</p>-->
+        <!--</div>-->
+        <!--<div class="about_date about_s6">-->
+          <!--<h4>2018</h4>-->
+          <!--<p>进军智慧教育市场</p>-->
+        <!--</div>-->
+        <!--<div class="about_date about_s7">-->
+          <!--<h4>2018</h4>-->
+          <!--<p>山西展会</p>-->
+        <!--</div>-->
+        <!--<div class="about_date about_s8">-->
+          <!--<h4>2018</h4>-->
+          <!--<p>向海南小学捐赠</p>-->
+        <!--</div>-->
       </div>
 
 
@@ -160,9 +161,11 @@
 
   .solve_img {
     width: 100%;
-    height: 669px;
+    height: 532px;
+    background: url('../../../static/common/images/gy_bg.png') center no-repeat;
     position: relative;
     overflow: hidden;
+    background-size: cover;
   }
 
   .solve_img img {
@@ -177,7 +180,7 @@
 
   .solve_img p {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     text-indent: 45px;
     font-family: PingFangSC-Regular;
     width: 888px;
@@ -189,7 +192,7 @@
     font-size: 49px;
     color: #fff;
     color: #fff;
-    margin: 150px 0 20px 0;
+    margin: 66px 0 20px 0;
     font-weight: normal;
     text-align: center;
   }
@@ -226,7 +229,7 @@
   }
 
   .aboutListMian > p {
-    font-size: 30px;
+    font-size: 26px;
     color: #373737;
     font-family: ArialMT;
     margin-left: 200px;
@@ -258,7 +261,7 @@
   .about_lishi {
     width: 100%;
     height: 1282px;
-    background: url('../../../static/common/images/about_bgs.png') no-repeat;
+    background: url('../../../static/common/images/about_bgs.png') center no-repeat;
     overflow: hidden;
     position: relative;
   }

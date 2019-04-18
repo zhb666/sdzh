@@ -2,12 +2,12 @@
 
   <div class="solve">
 
-    <div class="solve_main animated fadeInLeft">
+    <div class="solve_main">
 
       <div class="solve_img">
-        <img src="../../../static/common/images/zx_bg.png" alt=""/>
-        <h1 class="banner_h1 animated fadeInLeft">案例展示</h1>
-        <h3 class="banner_h3 animated fadeInLeft">CASE PRESENTATION</h3>
+        <!--<img src="../../../static/common/images/zx_bg.png" alt=""/>-->
+        <h1 class="banner_h1 animated fadeInLeft">资讯中心</h1>
+        <h3 class="banner_h3 animated fadeInLeft">INFORMATION CENTER </h3>
       </div>
 
       <!--资讯-->
@@ -123,8 +123,10 @@
   .solve_img {
     width: 100%;
     height: 532px;
+    background: url('../../../static/common/images/zx_bg.png') center no-repeat;
     position: relative;
     overflow: hidden;
+    background-size: cover;
   }
 
   .solve_img img {
@@ -139,14 +141,14 @@
   .banner_h1 {
     font-size: 49px;
     color: #fff;
-    margin: 208px 0 0 300px;
+    margin: 208px 0 0 18%;
     font-weight: normal;
   }
 
   .banner_h3 {
     font-size: 22px;
     color: #fff;
-    margin: 10px 0 0 300px;
+    margin: 10px 0 0 18%;
     font-weight: normal;
     animation-delay: .5s;
   }
@@ -171,11 +173,14 @@
   }
 
   .information_box >ul{
-    width: 100%;
-    height: 320px;
+    width: 80%;
+    height: auto;
     /*display: flex;*/
     /*justify-content: center;*/
     /*background: red;*/
+    padding-bottom: 20px;
+    margin: 0 auto;
+    overflow: hidden;
   }
   .information_box> ul li{
     width: 220px;
@@ -184,7 +189,7 @@
     padding: 10px;
     position: relative;
     box-shadow: 0px 2px 10px #888888;
-    margin:30px 0 0 150px;
+    margin:30px 0 0 56px;
     box-sizing: border-box;
     text-align: center;
     cursor: pointer;
@@ -244,7 +249,7 @@
     width: 260px;
     height: 30px;
     position: absolute;
-    right: 80px;
+    right: 220px;
     top: 0;
   }
   .ulLists ul{

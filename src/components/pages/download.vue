@@ -2,10 +2,10 @@
 
   <div class="solve">
 
-    <div class="solve_main animated fadeInLeft">
+    <div class="solve_main">
 
       <div class="solve_img">
-        <img src="../../../static/common/images/xz_bg.png" alt=""/>
+        <!--<img src="../../../static/common/images/xz_bg.png" alt=""/>-->
         <h1 class="banner_h1 animated fadeInLeft">下载中心</h1>
         <h3 class="banner_h3 animated fadeInLeft">DOWNLOAD CENTER</h3>
       </div>
@@ -116,8 +116,10 @@
   .solve_img {
     width: 100%;
     height: 532px;
+    background: url('../../../static/common/images/xz_bg.png') center no-repeat;
     position: relative;
     overflow: hidden;
+    background-size: cover;
   }
 
   .solve_img img {
@@ -132,14 +134,14 @@
   .banner_h1 {
     font-size: 49px;
     color: #fff;
-    margin: 208px 0 0 300px;
+    margin: 208px 0 0 18%;
     font-weight: normal;
   }
 
   .banner_h3 {
     font-size: 22px;
     color: #fff;
-    margin: 10px 0 0 300px;
+    margin: 10px 0 0 18%;
     font-weight: normal;
     animation-delay: .5s;
   }
@@ -147,7 +149,7 @@
   .downloadMain {
     width: 100%;
     height: 2080px;
-    background: url('../../../static/common/images/xz_Main_bg.png') no-repeat;
+    background: url('../../../static/common/images/xz_Main_bg.png') center no-repeat;
     overflow: hidden;
     position: relative;
   }
@@ -167,7 +169,9 @@
 
   .yopP {
     color: #4A4A4A;
-    font-size: 27px;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
     margin-top: 30px;
     animation-delay: .5s;
   }

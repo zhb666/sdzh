@@ -8,7 +8,9 @@
 
         <div class="headerBox_center">
           <div class="headerBox_center_l">
-            <img src="../static/common/images/logo.png" alt="">
+            <router-link to="/" tag="p" exact>
+              <img src="../static/common/images/logo.png" alt="">
+            </router-link>
           </div>
           <div class="headerBox_center_R">
             <ul class="headerBoxmenu">
@@ -52,7 +54,7 @@
               <li>
                 <router-link to="/information" tag="p">资讯中心</router-link>
               </li>
-              <li>服务支持</li>
+              <!--<li>服务支持</li>-->
               <li>
                 <router-link to="/about" tag="p">关于我们</router-link>
               </li>
@@ -102,6 +104,7 @@
                 <router-link to="/Interaction" tag="p">互动智慧</router-link>
                 <router-link to="/train" tag="p">实训智慧</router-link>
                 <router-link to="/manyCj" tag="p">多场景智慧</router-link>
+                <router-link to="/campus" tag="p">智慧校园</router-link>
               </li>
             </ul>
 
@@ -141,6 +144,7 @@
             <p>0755-26640295</p>
             <p>waterdrop@shuidizhihui.com</p>
             <p>备案号：粤ICP备18102002号</p>
+            <p>水滴智慧科技（深圳）有限公司</p>
           </div>
         </div>
       </div>
@@ -165,9 +169,9 @@
       _jq() {
         $('.po_weizhi').hover(function () {
           $(this).find('ul').show();
-          $(this).find('ul').addClass('animated fadeInLeft');
+          // $(this).find('ul').addClass('animated slideInUp');
         }, function () {
-          $(this).find('ul').removeClass('animated fadeInLeft');
+          // $(this).find('ul').removeClass('animated slideInUp');
           $(this).find('ul').hide();
         });
 
@@ -182,9 +186,9 @@
         $(window).scroll(function (event) {
           // console.log($(document).scrollTop())
           if ($(document).scrollTop() > 1) {
-            $('.headerBox').css('background', 'rgba(214,214,214,.3)')
+            $('.headerBox').css('background', 'rgba(75,140,246,.8)')
           } else {
-            $('.headerBox').css('background', 'rgba(214,214,214,0)')
+            $('.headerBox').css('background', 'rgba(75,140,246,0)')
           }
 
           if ($(document).scrollTop() > 1000) {
@@ -197,7 +201,12 @@
         //底部点击之后位置变化
         $('.footerBox_main_t ul li p').on('click', function () {
           $(document).scrollTop(0);
-        })
+        });
+
+        //顶部点击位置变化
+        $('.headerBoxmenu li').add('.headerBox_center_l img').on('click', function () {
+          $(document).scrollTop(0);
+        });
 
         //点击回到顶部
         $('.stops').on('click', function () {
@@ -248,10 +257,12 @@
     width: 10%;
     height: 100%;
     float: left;
+    /*margin-left: 8%;*/
   }
 
   .headerBox_center_l img {
     margin-top: 8px;
+    cursor: pointer;
   }
 
   .headerBox_center_R {
@@ -320,9 +331,11 @@
   }
 
   .footerBox_main_t ul li p {
-    font-size: 18px;
-    line-height: 28px;
-  }
+     font-size: 16px;
+     line-height: 28px;
+     opacity: .9;
+    transition: .5s;
+   }
 
   .footerBox_main_b {
     width: 100%;
@@ -353,24 +366,24 @@
     left: -25px;
     top: 46px;
     padding: 6px;
-    background: rgba(214, 214, 214, .3);
+    background: rgba(75,140,246,.8);
     border-radius: 6px;
     display: none;
   }
 
   .menu_ul li {
-    height: 24px;
+    height: 30px;
     width: 100%;
     text-align: center;
     color: white;
-    line-height: 24px;
+    line-height: 30px;
     color: white;
     border-bottom: 1px solid rgba(209, 209, 209, .3);
     cursor: pointer;
   }
 
   .menu_ul li p:hover {
-    color: #007aff;
+    color: #000;
   }
 
   .headerBox_center_R ul li p:hover {
@@ -381,41 +394,14 @@
     border-bottom: 2px solid #fff;
   }
 
-  /*.headerBox_center_R ul li :hover {*/
-  /*border-bottom: 2px solid #fff;*/
-  /*}*/
-
-  /*全局*/
-  /*.el-carousel__item:nth-child(2n) {*/
-  /*background-color: #99a9bf;*/
-  /*}*/
-
-  /*.el-carousel__item:nth-child(2n+1) {*/
-  /*background-color: #d3dce6;*/
-  /*}*/
-
-  .el-carousel__container {
-    height: 100%;
-  }
-
-  .el-carousel {
-    height: 100%;
-    position: relative;
-  }
-
-  .el-carousel__item img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
-
   .index_sidebar {
     width: 92px;
     height: 388px;
     background: url('../static/common/images/index_rigit.png') no-repeat;
     position: fixed;
     right: 0;
-    top: 40%;
+    top: 30%;
+    transform:scale(.5);
     display: none;
   }
 
@@ -470,4 +456,51 @@
     height: 100px;
     display: block;
   }
+
+  /*.headerBox_center_R ul li :hover {*/
+  /*border-bottom: 2px solid #fff;*/
+  /*}*/
+
+  /*全局*/
+  /*.el-carousel__item:nth-child(2n) {*/
+  /*background-color: #99a9bf;*/
+  /*}*/
+
+  /*.el-carousel__item:nth-child(2n+1) {*/
+  /*background-color: #d3dce6;*/
+  /*}*/
+
+  .banner .el-carousel .el-carousel__container {
+    height: 1014px!important;
+  }
+
+  .el-carousel__container {
+    height: 100%;
+  }
+
+  .el-carousel {
+    height: 100%;
+    position: relative;
+  }
+
+  .el-carousel__item img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .cbh5{
+    font-size: 28px!important;
+  }
+  .cbp{
+    font-size: 20px!important;
+  }
+  .information_box ul li p{
+    font-size: 11px!important;
+    height: 82px!important;
+  }
+  .information_box ul li h6{
+    font-weight: bold;
+  }
+
 </style>
