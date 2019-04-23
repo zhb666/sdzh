@@ -39,11 +39,10 @@
           <div class="leftRiBoxL">
             <img style="margin-top: 150px" class="cbimg" src="../../../static/common/images/hdImg1.png" alt="">
           </div>
-          <div class="leftRiBoxR">
+          <div class="leftRiBoxR" style="padding-left: 100px;box-sizing: border-box">
             <h5 class="cbh5" style="margin-top: 180px;">跨域互动，并没那么难</h5>
             <p class="cbp">除了兼具常态智慧教室解决方案功能优势</p>
             <p class="cbp">还支持跨地域、跨空间互动</p>
-            <p class="cbp">学生问题多、老师顾不来</p>
             <p class="cbp">互动直播教学系统</p>
             <p class="cbp">满足双师远程互动、名师远程教学等各类需求</p>
           </div>
@@ -73,7 +72,7 @@
           <div class="leftRiBoxL">
             <img style="margin-top: 150px" class="cbimg" src="../../../static/common/images/hdImg3.png" alt="">
           </div>
-          <div class="leftRiBoxR">
+          <div class="leftRiBoxR" style="padding-left: 100px;box-sizing: border-box">
             <h5 class="cbh5">自制微课，共享优质资源</h5>
             <p class="cbp">实时录播课堂，自动生成并上传精品微课</p>
             <p class="cbp">不受时间、地域限制</p>

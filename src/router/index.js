@@ -14,6 +14,7 @@ import InFoDetails from '@/components/pages/InFoDetails'
 import About from '@/components/pages/about'
 
 
+
 Vue.use(Router)
 
 export default new Router({

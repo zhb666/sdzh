@@ -401,7 +401,7 @@
     position: fixed;
     right: 0;
     top: 30%;
-    transform:scale(.5);
+    transform:scale(.7);
     display: none;
   }
 
@@ -434,11 +434,11 @@
     background: #DCDCDC;
     border-radius: 8px;
     position: absolute;
-    left: -132px;
-    top: 93px;
+    left: -145px;
+    top: 96px;
     display: none;
-
-  }
+    /*transform:scale(2);*/
+  }0
 
   .wx_ewm img {
     width: 106px;
@@ -494,6 +494,7 @@
   }
   .cbp{
     font-size: 20px!important;
+    line-height: 32px;
   }
   .information_box ul li p{
     font-size: 11px!important;

@@ -16,51 +16,16 @@
           <h2>资讯中心</h2>
           <div class="ulLists">
             <ul>
-              <li>全部</li>
-              <li>企业资讯</li>
-              <li>媒体报道</li>
+              <li @click="getNews">全部</li>
+              <li @click="getNewsType('企业资讯')">企业资讯</li>
+              <li @click="getNewsType('媒体报道')">媒体报道</li>
             </ul>
           </div>
           <ul class="showLines">
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
-            </li>
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
-            </li>
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
-            </li>
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
-            </li>
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
-            </li>
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
+            <li v-for="item in data" @click="getID(item.id)">
+              <img :src="item.image" alt="">
+              <h6>{{item.title}}</h6>
+              <p>{{item.introduction}}</p>
               <div class="lines"></div>
               <div class="lines_bottom"></div>
             </li>
@@ -79,30 +44,93 @@
 </template>
 
 <script>
+  import qs from 'qs'
   export default {
     name: 'information',
     data() {
-      return {}
+      return {
+        data:[],//数据
+      }
     },
     mounted() {
-      this._jq();
+      this.getNews();
+      // this._jq();
     },
     methods: {
+
+      getNews() {
+
+        let url = this.ApiUrl + '/information/getinformationlistbypage'
+        //登录
+        this.$http({
+          method: 'post',
+          url: url,
+          // data: qs.stringify({
+          //   type:
+          // })
+        }).then((response) => {
+          if (response.data.code == 0) {
+
+            this.data = response.data.data.data;
+
+          } else {
+            this.$message.error(response.data.msg);
+          }
+        }).catch((error) => {
+          console.log(error);
+        });
+
+      },
+
+      getNewsType(type) {
+
+        let url = this.ApiUrl + '/information/getinformationlistbypage'
+        //登录
+        this.$http({
+          method: 'post',
+          url: url,
+          data: qs.stringify({
+            type:type
+          })
+        }).then((response) => {
+          if (response.data.code == 0) {
+
+            this.data = response.data.data.data;
+
+          } else {
+            this.$message.error(response.data.msg);
+          }
+        }).catch((error) => {
+          console.log(error);
+        });
+
+      },
+
+      getID(id){
+        this.$router.push({path: '/InFoDetails',query: {
+            id: id
+          }});
+      },
+
       _jq() {
-        $('.showLines li').hover(function () {
-          $(this).addClass('animated bounce');
-          $('.lines_bottom').eq($(this).index()).show();
-        }, function () {
-          $(this).removeClass('animated bounce')
-          $('.lines_bottom').eq($(this).index()).hide();
-        })
+
+        // $('.showLines ').on('mouseenter','li',function () {
+        //   // $(this).addClass('animated bounce');
+        //   $('.lines_bottom').eq($(this).index()).show();
+        // })
+        //
+        // $('.showLines ').on('mouseout','li',function () {
+        //   // $(this).removeClass('animated bounce')
+        //   $('.lines_bottom').eq($(this).index()).hide();
+        // })
+
       },
     },
     computed: {
 //      count(){
 //        return this.$store.state.count
 //      },
-    }
+    },
   }
 </script>
 
@@ -154,7 +182,7 @@
   }
 
 
-  .information{
+  .information {
     width: 100%;
     height: auto;
     background: #FBFBFB;
@@ -162,17 +190,19 @@
     overflow: hidden;
     position: relative;
   }
-  .information_box{
+
+  .information_box {
     position: relative;
   }
-  .information_box h2{
+
+  .information_box h2 {
     font-size: 30px;
     color: #545454;
     text-align: left;
     margin: 108px 0 30px 160px;
   }
 
-  .information_box >ul{
+  .information_box > ul {
     width: 80%;
     height: auto;
     /*display: flex;*/
@@ -181,32 +211,37 @@
     padding-bottom: 20px;
     margin: 0 auto;
     overflow: hidden;
+    opacity: 1;
   }
-  .information_box> ul li{
+
+  .information_box > ul li {
     width: 220px;
     height: 341px;
     background: white;
     padding: 10px;
     position: relative;
     box-shadow: 0px 2px 10px #888888;
-    margin:30px 0 0 56px;
+    margin: 30px 0 0 56px;
     box-sizing: border-box;
     text-align: center;
     cursor: pointer;
     float: left;
   }
-  .information_box> ul li img{
+
+  .information_box > ul li img {
     width: 177px;
     height: 177px;
     background-size: cover;
     margin-top: 10px;
   }
-  .information_box> ul li h6{
+
+  .information_box > ul li h6 {
     font-size: 15px;
     color: #535353;
     margin-bottom: 10px;
   }
-  .information_box> ul li p{
+
+  .information_box > ul li p {
     font-size: 16px;
     color: #535353;
     margin-bottom: 12px;
@@ -214,9 +249,10 @@
     width: 100%;
     overflow: hidden;
     /*white-space: nowrap;*/
-    text-overflow: ellipsis;
+    /*text-overflow: ellipsis;*/
   }
-  .lines{
+
+  .lines {
     position: absolute;
     left: 10px;
     top: 10px;
@@ -224,7 +260,8 @@
     height: 1px;
     width: 6px;
   }
-  .lines_bottom{
+
+  .lines_bottom {
     width: 100%;
     height: 6px;
     background: #4081f4;
@@ -234,36 +271,46 @@
     display: none;
     transition: .5s;
   }
-  .hezuo{
+
+  .hezuo {
     width: 100%;
     height: auto;
     overflow: hidden;
     background: white;
   }
-  .hezuo h3{
+
+  .hezuo h3 {
     font-size: 30px;
     color: #454545;
     text-align: center;
   }
-  .ulLists{
+
+  .ulLists {
     width: 260px;
     height: 30px;
     position: absolute;
     right: 220px;
     top: 0;
   }
-  .ulLists ul{
+
+  .ulLists ul {
     width: 100%;
     display: flex;
     justify-content: left;
   }
-  .ulLists ul li{
+
+  .ulLists ul li {
     margin-left: 20px;
     color: #4081F4;
     font-size: 18px;
     cursor: pointer;
   }
-  .ulLists ul li:hover{
-    color: #007aff;
+
+  .ulLists ul li:hover {
+    color: #105de4;
+  }
+  .showLines li:hover{
+    opacity: 1;
+    background: #efeeee;
   }
 </style>

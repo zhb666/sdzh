@@ -11,12 +11,12 @@
       </div>
 
       <!--资讯-->
-      <div class="information">
+      <div class="information" v-loading="loading">
         <div class="information_box w1200">
           <h2>企业资讯</h2>
 
           <!--显示新闻-->
-          <div class="newsBox w1200"></div>
+          <div class="newsBox w1200" v-html="data"></div>
 
 
         </div>
@@ -30,24 +30,44 @@
 </template>
 
 <script>
+  import qs from 'qs'
   export default {
     name: 'information',
     data() {
-      return {}
+      return {
+        id:this.$route.query.id,
+        data:'',
+        loading: true
+      }
     },
     mounted() {
-      this._jq();
+      this.getNews(this.id)
     },
     methods: {
-      _jq() {
-        $('.showLines li').hover(function () {
-          $(this).addClass('animated bounce');
-          $('.lines_bottom').eq($(this).index()).show();
-        }, function () {
-          $(this).removeClass('animated bounce')
-          $('.lines_bottom').eq($(this).index()).hide();
-        })
+
+      getNews(id) {
+
+        let url = this.ApiUrl + '/information/getinformationbyid'
+        //登录
+        this.$http({
+          method: 'post',
+          url: url,
+          data: qs.stringify({
+            id:id
+          })
+        }).then((response) => {
+          if (response.data.code == 0) {
+            this.data = response.data.data.article;
+            this.loading = false;
+          } else {
+            this.$message.error(response.data.msg);
+          }
+        }).catch((error) => {
+          console.log(error);
+        });
+
       },
+
     },
     computed: {
 //      count(){
@@ -103,8 +123,6 @@
     font-weight: normal;
     animation-delay: .5s;
   }
-
-
   .information{
     width: 100%;
     height: auto;
@@ -114,13 +132,19 @@
     position: relative;
   }
   .information_box{
+    height: auto;
     position: relative;
+    overflow: hidden;
   }
   .information_box h2{
     font-size: 30px;
     color: #545454;
     text-align: left;
-    margin: 108px 0 30px 160px;
+    margin: 108px 0 40px 0;
+  }
+  .information_box img{
+    width: 100%;
+    height: auto;
   }
 
 .newsBox{

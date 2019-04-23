@@ -58,7 +58,7 @@
           <div class="leftRiBoxL">
             <img class="cbimg" src="../../../static/common/images/cb1.png" alt="">
           </div>
-          <div class="leftRiBoxR">
+          <div class="leftRiBoxR" style="padding-left: 100px;box-sizing: border-box">
             <h5 class="cbh5">教学，从此不再复杂</h5>
             <p class="cbp">一键开启板书/课件/视频/作业/扫描/批注六合一功能</p>
             <p class="cbp">板书自动分类保存，随时随地分享回顾 </p>
@@ -75,7 +75,7 @@
             <p class="cbp">各类学科工具应有尽有，随时满足教师需求 </p>
             <p class="cbp">保存分享板书，学生课后复习回顾不再愁</p>
           </div>
-          <div class="leftRiBoxL">
+          <div class="leftRiBoxL" style="padding-left: 100px;box-sizing: border-box">
             <img class="cbimg" src="../../../static/common/images/cb2.png" alt="">
           </div>
         </div>

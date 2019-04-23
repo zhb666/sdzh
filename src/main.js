@@ -10,6 +10,7 @@ import echarts from 'echarts'
 import Vuex from 'vuex'
 import store from './store/store'
 import axios from 'axios'
+import '../static/common/js/mian'
 
 
 import '../static/common/css/reset.css'
@@ -33,8 +34,6 @@ Vue.prototype.$echarts = echarts
 Vue.prototype.$http= axios
 // Vue.prototype.$http.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8' // 配置请求头
 Vue.prototype.$http.defaults.headers.common['x-access-token'] = store.state.token // 配置请求头token
-
-
 
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requireAuth)){  // 判断该路由是否需要登录权限

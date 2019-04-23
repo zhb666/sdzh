@@ -34,7 +34,7 @@
           <div class="leftRiBoxL">
             <img class="cbimg" src="../../../static/common/images/sx_list1.png" alt="">
           </div>
-          <div class="leftRiBoxR">
+          <div class="leftRiBoxR" style="padding-left: 100px;box-sizing: border-box">
             <h5 class="cbh5">传统围观式教学</h5>
             <p class="cbp">学生看不清、老师教不细</p>
             <p class="cbp">学生问题多、老师顾不来</p>
@@ -47,7 +47,7 @@
 
       <div style="background: white;" class="leftRi">
         <div class="leftRiBox w1200">
-          <div class="leftRiBoxR">
+          <div class="leftRiBoxR" style="padding-left: 100px;box-sizing: border-box">
             <h5 class="cbh5">传统实训教学</h5>
             <p class="cbp">教学指导不到位、实操时间不足、教学效果差</p>
             <p class="cbp">通过学生分组实训</p>
@@ -224,7 +224,7 @@ font-weight: normal;
     margin-top: 56px;
   }
   .cbh5{
-    font-size: 30px;
+    font-size: 20px!important;
     font-weight: normal;
     color: #555555;
     margin:226px 0 10px 0 ;

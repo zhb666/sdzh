@@ -6,12 +6,12 @@
       <div class="banner">
         <el-carousel :height="height">
           <el-carousel-item>
-            <div class="boxImgs">
-              <h1 class="banner_h1 animated fadeInLeft">水滴智慧</h1>
-              <h3 class="banner_h3 animated fadeInRight">未来教育智造者</h3>
-              <!--<img src="../../../static/common/images/banner_1.png" alt="">-->
-            </div>
-          </el-carousel-item>
+          <div class="boxImgs">
+            <h1 class="banner_h1 animated fadeInLeft">水滴智慧</h1>
+            <h3 class="banner_h3 animated fadeInRight">未来教育智造者</h3>
+            <!--<img src="../../../static/common/images/banner_1.png" alt="">-->
+          </div>
+        </el-carousel-item>
         </el-carousel>
 
       </div>
@@ -56,14 +56,14 @@
             </router-link>
           </div>
 
-          <div class="po1 po animated zoomIn"><br>
+          <div class="po1 po animated zoomIn">
             具备常态教室基本功能；<br>
             实时/远程直播教学互动，教学资源共享；<br>
             远程督学功能，实时查看上课情况；<br>
             实时直播录播，自动生成微课云端分享<br>
           </div>
 
-          <div class="po2 po animated zoomIn"><br>
+          <div class="po2 po animated zoomIn">
             具备常态教室基本功能；<br>
             校企实时远程互动；<br>
             同步示范教学；<br>
@@ -120,7 +120,9 @@
               <p>学 形式，提高教学效率</p>
             </li>
           </ul>
-          <div class="genduos">了解更多</div>
+          <router-link to="/Introduce" tag="div">
+            <div class="genduos">了解更多</div>
+          </router-link>
         </div>
       </div>
 
