@@ -20,16 +20,16 @@
               <li class="po_weizhi">
                 <ul class="menu_ul">
                   <li>
-                    <router-link to="/solve" tag="p">常态智慧</router-link>
+                    <router-link to="/solve" tag="p">常态教室</router-link>
                   </li>
                   <li>
-                    <router-link to="/Interaction" tag="p">互动智慧</router-link>
+                    <router-link to="/Interaction" tag="p">互动教室</router-link>
                   </li>
                   <li>
-                    <router-link to="/train" tag="p">实训智慧</router-link>
+                    <router-link to="/train" tag="p">实训教室</router-link>
                   </li>
                   <li>
-                    <router-link to="/manyCj" tag="p">多场景智慧</router-link>
+                    <router-link to="/manyCj" tag="p">多场景会议室</router-link>
                   </li>
                   <li>
                     <router-link to="/campus" tag="p">智慧校园</router-link>
@@ -100,10 +100,10 @@
             <ul>
               <li>
                 <h3>解决方案</h3>
-                <router-link to="/solve" tag="p">常态智慧</router-link>
-                <router-link to="/Interaction" tag="p">互动智慧</router-link>
-                <router-link to="/train" tag="p">实训智慧</router-link>
-                <router-link to="/manyCj" tag="p">多场景智慧</router-link>
+                <router-link to="/solve" tag="p">常态教室</router-link>
+                <router-link to="/Interaction" tag="p">互动教室</router-link>
+                <router-link to="/train" tag="p">实训教室</router-link>
+                <router-link to="/manyCj" tag="p">多场景会议室</router-link>
                 <router-link to="/campus" tag="p">智慧校园</router-link>
               </li>
             </ul>
@@ -124,13 +124,13 @@
               </li>
             </ul>
 
-            <ul>
-              <li>
-                <h3>服务支持</h3>
-                <p>售后服务</p>
-                <p>使用手册</p>
-              </li>
-            </ul>
+            <!--<ul>-->
+              <!--<li>-->
+                <!--<h3>服务支持</h3>-->
+                <!--<p>售后服务</p>-->
+                <!--<p>使用手册</p>-->
+              <!--</li>-->
+            <!--</ul>-->
 
             <ul>
               <li>
@@ -244,7 +244,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 100000;
   }
 
   .headerBox_center {
@@ -328,6 +328,7 @@
 
   .footerBox_main_t ul li h3 {
     font-size: 22px;
+    cursor: default;
   }
 
   .footerBox_main_t ul li p {
@@ -367,7 +368,7 @@
     top: 46px;
     padding: 6px;
     background: rgba(75,140,246,.8);
-    border-radius: 6px;
+    /*border-radius: 6px;*/
     display: none;
   }
 
@@ -438,7 +439,7 @@
     top: 96px;
     display: none;
     /*transform:scale(2);*/
-  }0
+  }
 
   .wx_ewm img {
     width: 106px;
@@ -497,8 +498,8 @@
     line-height: 32px;
   }
   .information_box ul li p{
-    font-size: 11px!important;
-    height: 82px!important;
+    font-size: 13px!important;
+    height: 54px!important;
   }
   .information_box ul li h6{
     font-weight: bold;

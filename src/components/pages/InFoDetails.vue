@@ -6,8 +6,8 @@
 
       <div class="solve_img">
         <!--<img src="../../../static/common/images/zx_bg.png" alt=""/>-->
-        <h1 class="banner_h1 animated fadeInLeft">案例展示</h1>
-        <h3 class="banner_h3 animated fadeInLeft">CASE PRESENTATION</h3>
+        <h1 class="banner_h1 animated fadeInLeft">资讯中心</h1>
+        <h3 class="banner_h3 animated fadeInLeft">INFORMATION CENTER </h3>
       </div>
 
       <!--资讯-->
@@ -15,8 +15,18 @@
         <div class="information_box w1200">
           <h2>企业资讯</h2>
 
+          <div class="titles">{{title}}</div>
+          <div class="zuozhes">
+            <p>
+              <img src="../../../static/common/images/zuozge.png" alt=""> {{name}}
+            </p>
+            <p>{{date}}</p>
+          </div>
+
+
+
           <!--显示新闻-->
-          <div class="newsBox w1200" v-html="data"></div>
+          <div class="newsBox w1200 ql-editor"  v-html="data"></div>
 
 
         </div>
@@ -30,6 +40,9 @@
 </template>
 
 <script>
+  import 'quill/dist/quill.core.css';
+  import 'quill/dist/quill.snow.css';
+  import 'quill/dist/quill.bubble.css';
   import qs from 'qs'
   export default {
     name: 'information',
@@ -37,7 +50,10 @@
       return {
         id:this.$route.query.id,
         data:'',
-        loading: true
+        loading: true,
+        title:'',
+        name:'',
+        date:'',
       }
     },
     mounted() {
@@ -58,6 +74,9 @@
         }).then((response) => {
           if (response.data.code == 0) {
             this.data = response.data.data.article;
+            this.title = response.data.data.title;
+            this.name = response.data.data.publisher;
+            this.date = response.data.data.create_time;
             this.loading = false;
           } else {
             this.$message.error(response.data.msg);
@@ -73,6 +92,12 @@
 //      count(){
 //        return this.$store.state.count
 //      },
+    },
+    updated() {
+      $('.newsBox').find('img').each(function (index,element) {
+        $(element).css('max-width','1180px')
+      })
+
     }
   }
 </script>
@@ -150,5 +175,39 @@
 .newsBox{
   height: auto;
 }
+  .titles{
+    color: #454545;
+    font-size: 28px;
+    text-align: center;
+    margin: 52px 0 30px 0;
+    border-bottom: #979797;
+  }
+  .zuozhes{
+    width: 300px;
+    height: 30px;
+    /*background: red;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .newsBox img{
+    max-width: 1200px;
+  }
+
+  .zuozhes img{
+    width: 19px;
+    height: 18px;
+  }
+  .zuozhes p{
+    color: #454545;
+    font-size: 13px;
+    vertical-align: top;
+    /*width: 80px;*/
+    margin-right: 20px;
+  }
+  .zuozhes img{
+    vertical-align: top;
+  }
 
 </style>

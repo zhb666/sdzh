@@ -12,11 +12,12 @@
           水滴智慧科技（深圳）有限公司于2013年05月30日成立，是一家智慧校园解决方案与工具提供商。其研发团队主要由原谷歌和华为研发人员组建，致力从事智慧教室一体化解决方案的研发、生产和销售，为全国大中专院校、中小学、教育机构、企业培训等信息化发展需求提供技术支持。</p>
         <p class="banner_h1 animated fadeInRightBig">
           在转型做互联网智慧教育市场不到一年的时间里，水滴智慧已建立深圳、东莞、北京、海南、山西、湖南、安徽等营销中心，服务客户逾两百家。</p>
-        <div class="Btns animated fadeInLeft"></div>
+        <div @click="videoFUn" class="Btns animated fadeInLeft"></div>
       </div>
 
       <div class="aboutList">
         <div class="aboutListMian w1200">
+
           <h6 class="animated fadeInRightBig">企业品牌</h6>
           <p>愿景：打造“互联网+教育”生态圈，让千万师生享受智慧教学</p>
           <p>使命：用科技的力量改变传统教育方式</p>
@@ -77,40 +78,51 @@
         <!--<div class="about_line"></div>-->
 
         <!--<div class="about_date about_s1">-->
-          <!--<h4>2013</h4>-->
-          <!--<p>公司成立</p>-->
+        <!--<h4>2013</h4>-->
+        <!--<p>公司成立</p>-->
         <!--</div>-->
         <!--<div class="about_date about_s2">-->
-          <!--<h4>2018</h4>-->
-          <!--<p>北京营销中心成立</p>-->
+        <!--<h4>2018</h4>-->
+        <!--<p>北京营销中心成立</p>-->
         <!--</div>-->
         <!--<div class="about_date about_s3">-->
-          <!--<h4>2018</h4>-->
-          <!--<p>负责海南科技职业学校</p>-->
+        <!--<h4>2018</h4>-->
+        <!--<p>负责海南科技职业学校</p>-->
         <!--</div>-->
         <!--<div class="about_date about_s4">-->
-          <!--<h4>2018</h4>-->
-          <!--<p>山西营销中心成立</p>-->
+        <!--<h4>2018</h4>-->
+        <!--<p>山西营销中心成立</p>-->
         <!--</div>-->
         <!--<div class="about_date about_s5">-->
-          <!--<h4>2018</h4>-->
-          <!--<p>东莞营销中心成立</p>-->
+        <!--<h4>2018</h4>-->
+        <!--<p>东莞营销中心成立</p>-->
         <!--</div>-->
         <!--<div class="about_date about_s6">-->
-          <!--<h4>2018</h4>-->
-          <!--<p>进军智慧教育市场</p>-->
+        <!--<h4>2018</h4>-->
+        <!--<p>进军智慧教育市场</p>-->
         <!--</div>-->
         <!--<div class="about_date about_s7">-->
-          <!--<h4>2018</h4>-->
-          <!--<p>山西展会</p>-->
+        <!--<h4>2018</h4>-->
+        <!--<p>山西展会</p>-->
         <!--</div>-->
         <!--<div class="about_date about_s8">-->
-          <!--<h4>2018</h4>-->
-          <!--<p>向海南小学捐赠</p>-->
+        <!--<h4>2018</h4>-->
+        <!--<p>向海南小学捐赠</p>-->
         <!--</div>-->
       </div>
 
 
+    </div>
+
+    <div class="video_box" v-if="videoOFF">
+      <div class="viBoxs">
+        <video autoplay="autoplay" poster="" controls="controls">
+          <source src="../../../static/common/video.mp4" type="video/mp4">
+          <!-- <source src="/path/to/video.webm" type="video/webm">-->
+          <!-- Captions are optional -->
+        </video>
+      </div>
+      <div class="hide_video" @click="videoOFF = false;">关闭</div>
     </div>
 
   </div>
@@ -118,15 +130,23 @@
 </template>
 
 <script>
+  // import '../../../static/common/js/plyr'
   export default {
     name: 'Interaction',
     data() {
-      return {}
+      return {
+        videoOFF: false
+      }
     },
     mounted() {
       this._jq();
+      // plyr.setup();
     },
     methods: {
+      videoFUn() {
+        this.videoOFF = true;
+        // plyr.setup();
+      },
       _jq() {
         $('.showLines li').hover(function () {
           $(this).addClass('animated bounce');
@@ -147,6 +167,48 @@
 
 
 <style scoped>
+  @import url('../../../static/common/css/plyr.css');
+
+  .video_box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    /*opacity: .8;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*padding: 10% 10%;*/
+    box-sizing: border-box;
+    z-index: 100;
+  }
+  .viBoxs{
+    width: 60%;
+    height: auto;
+    /*background: red;*/
+    margin: 100px auto;
+  }
+
+  .video_box video {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .hide_video {
+    position: fixed;
+    right: 21%;
+    top: 118px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .hide_video:hover {
+    color: #007aff;
+  }
+
   .solve {
     width: 100%;
     height: auto;
@@ -295,87 +357,103 @@
   }
 
   .about_date h4 {
-     color: white;
-     font-size: 39px;
-     font-family: Arial-BoldMT;
-   }
+    color: white;
+    font-size: 39px;
+    font-family: Arial-BoldMT;
+  }
+
   .about_date p {
     color: white;
     font-size: 18px;
-    font-family:PingFangSC-Regular;
+    font-family: PingFangSC-Regular;
   }
-  .about_s1{
+
+  .about_s1 {
     left: 450px;
     top: 480px;
   }
-  .about_s2{
+
+  .about_s2 {
     left: 560px;
     top: 320px;
   }
-  .about_s3{
+
+  .about_s3 {
     left: 820px;
     top: 320px;
   }
-  .about_s4{
+
+  .about_s4 {
     left: 1120px;
     top: 320px;
   }
-  .about_s5{
+
+  .about_s5 {
     left: 720px;
     top: 480px;
   }
-  .about_s6{
+
+  .about_s6 {
     left: 1000px;
     top: 480px;
   }
-  .about_s7{
+
+  .about_s7 {
     left: 1280px;
     top: 480px;
   }
-  .about_s8{
+
+  .about_s8 {
     left: 1420px;
     top: 480px;
   }
-  .about_lianxi{
+
+  .about_lianxi {
     width: 100%;
     height: 380px;
     /*background: red;*/
     margin-top: 680px;
   }
-  .about_lianxi ul{
+
+  .about_lianxi ul {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: left;
   }
-  .about_lianxi ul li{
+
+  .about_lianxi ul li {
     width: 550px;
     height: 372px;
     border-radius: 8px;
-    background: rgba(64,129,244,.6);
+    background: rgba(64, 129, 244, .6);
     margin-right: 52px;
     position: relative;
     padding: 42px;
     box-sizing: border-box;
   }
-  .about_liline{
-    height:3px ;
+
+  .about_liline {
+    height: 3px;
     width: 50px;
     background: white;
   }
-  .about_lianxi ul li h5{
+
+  .about_lianxi ul li h5 {
     font-size: 26px;
     color: white;
     margin: 52px 0 40px 0;
     font-weight: normal;
   }
-  .about_lianxi ul li p{
+
+  .about_lianxi ul li p {
     font-size: 15px;
     color: white;
     line-height: 24px;
-    font-family:ArialMT;
+    font-family: ArialMT;
   }
-  .dinwgeis{
+
+  .dinwgeis {
     position: absolute;
     right: 60px;
     top: 116px;

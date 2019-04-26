@@ -44,7 +44,7 @@
             <p class="cbp">和读书历史，对学生进行阅读行为轨迹分析与个性化推荐图</p>
             <p class="cbp">书清单，并为同样爱好的学生组建交流社群，从线下的个人</p>
             <p class="cbp">阅读行为联动至线上的公阅读交流社区，让图书馆真正变成</p>
-            <p class="cbp">读书爱好者的天堂</p>
+            <p class="cbp">读书爱好者的天堂。</p>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
           <div class="leftRiBoxR">
             <h5 class="cbh5">智慧宿舍</h5>
             <p class="cbp">定时定位人脸识别打卡，保障学生晚上安全危急时刻自动向</p>
-            <p class="cbp">家人/教师通报，保证家校消息互通，让家长放心学生的安全</p>
+            <p class="cbp">家人/教师通报，保证家校消息互通，让家长放心学生的安全。</p>
           </div>
           <div class="leftRiBoxL" style="padding-left: 100px;box-sizing: border-box">
             <img class="cbimg" src="../../../static/common/images/x_img2.png" alt="">
@@ -83,7 +83,7 @@
           <div class="leftRiBoxR">
             <h5 class="cbh5">校园安防系统</h5>
             <p class="cbp">对校园进行智能监控与人脸识别，并具备紧急报警系统功能，</p>
-            <p class="cbp">可有效预防及制止校园暴力，防范危险性行为，保证校园师生安全</p>
+            <p class="cbp">可有效预防及制止校园暴力，防范危险性行为，保证校园师生安全。</p>
           </div>
           <div class="leftRiBoxL" style="padding-left: 100px;box-sizing: border-box">
             <img class="cbimg" src="../../../static/common/images/x_img4.png" alt="">

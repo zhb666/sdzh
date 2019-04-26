@@ -11,7 +11,7 @@
       </div>
 
       <!--资讯-->
-      <div class="information">
+      <div class="information" v-loading="loading">
         <div class="information_box w1200">
           <h2>资讯中心</h2>
           <div class="ulLists">
@@ -22,15 +22,55 @@
             </ul>
           </div>
           <ul class="showLines">
-            <li v-for="item in data" @click="getID(item.id)">
-              <img :src="item.image" alt="">
-              <h6>{{item.title}}</h6>
-              <p>{{item.introduction}}</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+            <!--<li v-for="item in data" @click="getID(item.id)">-->
+              <!--<img :src="item.image" alt="">-->
+              <!--<h6>{{item.title}}</h6>-->
+              <!--<p>{{item.introduction}}</p>-->
+              <!--<span>阅读更多></span>-->
+              <!--<div class="lines"></div>-->
+              <!--<div class="lines_bottom"></div>-->
+            <!--</li>-->
+
+            <li class="showLines_li">
+              <div class="showLines_li_l">
+                <div class="title">
+                  <span>企业资讯 | </span>
+                  <span> 2019-04-25</span>
+                </div>
+                <h6 class="showLines_li_lH6">扶智海南，海南科技职业学院捐赠百万智慧教室设备</h6>
+                <p class="showLines_li_lTEXT">“两所小学12套智慧教室设备正式投入使用了！”2019年2月底，随着这令人激动的消息传来， 海南科技职业学院 （本科） （以下简称“海科院”）的又一教学扶贫计划实现了。 帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市美兰区新埠中心小学、保亭黎族苗族自治县响水镇毛岸学校签署捐赠协议，</p>
+              </div>
+              <div class="showLines_li_R">
+                <img src="../../../static/common/images/sx_bg.png" alt="">
+              </div>
             </li>
+
+            <!--<li class="showLines_li" v-for="item in data" @click="getID(item.id)">>-->
+              <!--<div class="showLines_li_l">-->
+                <!--<div class="title">-->
+                  <!--<span>{{item.type}} | </span>-->
+                  <!--<span> {{item.create_time}}</span>-->
+                <!--</div>-->
+                <!--<h6 class="showLines_li_lH6">{{item.title}}</h6>-->
+                <!--<p class="showLines_li_lTEXT">{{item.introduction}}</p>-->
+              <!--</div>-->
+              <!--<div class="showLines_li_R">-->
+                <!--<img src="item.image" alt="">-->
+              <!--</div>-->
+            <!--</li>-->
+
+
           </ul>
 
+          <div v-show="totalRecords>6" class="pageBox" style="float: right;margin:50px 160px 0 0;">
+            <el-pagination
+              @current-change="handleCurrentChange"
+              :current-page.sync="page"
+              :page-size="10"
+              layout="prev, pager, next, jumper"
+              :total="totalRecords">
+            </el-pagination>
+          </div>
 
         </div>
       </div>
@@ -50,6 +90,10 @@
     data() {
       return {
         data:[],//数据
+        totalRecords: 0,//总页数
+        page: 1,//当前页码
+        types:'',
+        loading:false,
       }
     },
     mounted() {
@@ -59,19 +103,23 @@
     methods: {
 
       getNews() {
-
+        this.types = '';
+        this.loading = true;
         let url = this.ApiUrl + '/information/getinformationlistbypage'
         //登录
         this.$http({
           method: 'post',
           url: url,
-          // data: qs.stringify({
-          //   type:
-          // })
+          data: qs.stringify({
+            pageNum: 1, //页码   默认1
+            pageSize: 6, //每页条数 默认20
+          })
         }).then((response) => {
           if (response.data.code == 0) {
 
             this.data = response.data.data.data;
+            this.totalRecords = response.data.data.totalCount;
+            this.loading = false;
 
           } else {
             this.$message.error(response.data.msg);
@@ -83,19 +131,24 @@
       },
 
       getNewsType(type) {
-
+        this.types = type;
+        this.loading = true;
         let url = this.ApiUrl + '/information/getinformationlistbypage'
         //登录
         this.$http({
           method: 'post',
           url: url,
           data: qs.stringify({
-            type:type
+            type:type,
+            pageNum: 1, //页码   默认1
+            pageSize: 6, //每页条数 默认20
           })
         }).then((response) => {
           if (response.data.code == 0) {
 
             this.data = response.data.data.data;
+            this.totalRecords = response.data.data.totalCount;
+            this.loading = false;
 
           } else {
             this.$message.error(response.data.msg);
@@ -110,6 +163,34 @@
         this.$router.push({path: '/InFoDetails',query: {
             id: id
           }});
+      },
+
+      handleCurrentChange(val) {
+        this.loading = true;
+        let url = this.ApiUrl + '/information/getinformationlistbypage'
+        this.$http({
+          method: 'post',
+          url: url,
+          data: qs.stringify({
+            type:this.types,
+            pageNum: val, //页码   默认1
+            pageSize: 6, //每页条数 默认20
+          })
+        }).then((response) => {
+
+          if (response.data.code == 0) {
+            this.loading = false;
+            this.data = response.data.data.data;
+            this.totalRecords = response.data.data.totalCount;
+          } else {
+            if (response.data.code == '403') {
+              this.Signout();
+            }
+            this.$message.error(response.data.msg);
+          }
+        }).catch((error) => {
+          console.log(error);
+        });
       },
 
       _jq() {
@@ -156,6 +237,15 @@
     overflow: hidden;
     background-size: cover;
   }
+
+  /*.information_box ul li span{*/
+    /*font-size: 10px;*/
+    /*color: #4081F4;*/
+    /*cursor: pointer;*/
+    /*text-align: left;*/
+    /*display: block;*/
+    /*margin-left: 15px;*/
+  /*}*/
 
   .solve_img img {
     position: absolute;
@@ -214,63 +304,62 @@
     opacity: 1;
   }
 
-  .information_box > ul li {
-    width: 220px;
-    height: 341px;
-    background: white;
-    padding: 10px;
-    position: relative;
-    box-shadow: 0px 2px 10px #888888;
-    margin: 30px 0 0 56px;
-    box-sizing: border-box;
-    text-align: center;
-    cursor: pointer;
-    float: left;
-  }
-
-  .information_box > ul li img {
-    width: 177px;
-    height: 177px;
-    background-size: cover;
-    margin-top: 10px;
-  }
-
-  .information_box > ul li h6 {
-    font-size: 15px;
-    color: #535353;
-    margin-bottom: 10px;
-  }
-
-  .information_box > ul li p {
-    font-size: 16px;
-    color: #535353;
-    margin-bottom: 12px;
-    height: 88px;
-    width: 100%;
+  .showLines_li{
+    width: 872px;
+    height: 252px;
+    background: red;
+    margin-bottom: 40px;
+    background: #DCE7EE;
+    border-radius: 6px;
     overflow: hidden;
-    /*white-space: nowrap;*/
-    /*text-overflow: ellipsis;*/
+    cursor: pointer;
+    transition: .3s;
   }
 
-  .lines {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    background: #4081F4;
-    height: 1px;
-    width: 6px;
+  .showLines li:hover{
+    /*transform: scale(1.05);*/
+    background: #adaaaa;
   }
 
-  .lines_bottom {
-    width: 100%;
-    height: 6px;
-    background: #4081f4;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: none;
-    transition: .5s;
+  .showLines_li_l{
+    width: 483px;
+    height: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    float: left;
+    /*background: red;*/
   }
+  .showLines_li_R{
+    width: 387px;
+    height: 100%;
+    float: right;
+    /*background: yellow;*/
+  }
+  .title{
+    color: #A3A3A3;
+    font-size: 14px;
+  }
+.showLines_li_lH6{
+  color: #535353;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.showLines_li_lTEXT{
+  color: #535353;
+  font-size: 14px;
+  text-overflow:ellipsis;
+  margin-top: 10px;
+  /*white-space: nowrap;*/
+}
+.showLines_li_R img{
+  width: 100%;
+  height: 100%;
+}
+
 
   .hezuo {
     width: 100%;
@@ -309,8 +398,8 @@
   .ulLists ul li:hover {
     color: #105de4;
   }
-  .showLines li:hover{
-    opacity: 1;
-    background: #efeeee;
-  }
+  /*.showLines li:hover{*/
+    /*opacity: 1;*/
+    /*background: #efeeee;*/
+  /*}*/
 </style>

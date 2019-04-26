@@ -42,82 +42,94 @@
           <h2>常态智慧教室解决方案</h2>
           <ul class="showLines">
             <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+
+              <img class="showLines_liImg" src="../../../static/common/images/al_list/c_1.png" alt="">
+              <div class="showLines_liDiv">
+                <img class="imgsheed" src="../../../static/common/images/al_list/c_11.png" alt="">
+                <h6>海南省海口新埠中心小学</h6>
+                <p>花费与传统多媒体设备不相上下的成本 建立无尘化无辐射的教学环境，全面保护师生健康，并辅助提高教学效率，丰富教学内容，让学生学习更加积极有效。</p>
+              </div>
+
             </li>
             <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+
+              <img class="showLines_liImg" src="../../../static/common/images/al_list/c_2.png" alt="">
+              <div class="showLines_liDiv">
+                <img class="imgsheed" src="../../../static/common/images/al_list/c_22.png" alt="">
+                <h6>海南省海口新埠中心小学</h6>
+                <p>国际化教学配备先进的信息化技术教学设备，让教学更显卓越质量</p>
+              </div>
+
             </li>
             <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+
+              <img class="showLines_liImg" src="../../../static/common/images/al_list/c_3.png" alt="">
+              <div class="showLines_liDiv">
+                <img class="imgsheed" src="../../../static/common/images/al_list/c_33.png" alt="">
+                <h6>合肥市常春藤实验学校</h6>
+                <p>花费与传统多媒体设备不相上下的成本 建立无尘化无辐射的教学环境，全面保护师生健康，并辅助提高教学效率，丰富教学内容，让学生学习更加积极有效。</p>
+              </div>
+
             </li>
           </ul>
 
           <h2>互动智慧教室解决方案</h2>
           <ul class="showLines">
             <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+
+              <img class="showLines_liImg" src="../../../static/common/images/al_list/h_1.png" alt="">
+              <div class="showLines_liDiv">
+                <img class="imgsheed" src="../../../static/common/images/al_list/h_11.png" alt="">
+                <h6>安徽建筑大学</h6>
+                <p>在常态教室的基础上，增设校区互动、 智能化数据采集 、 物联网监控、自动直录播等功能，提高南北校区之间的互动频率与各类专业课的课堂效率。</p>
+              </div>
+
             </li>
             <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+
+              <img class="showLines_liImg" src="../../../static/common/images/al_list/h_2.png" alt="">
+              <div class="showLines_liDiv">
+                <img class="imgsheed" src="../../../static/common/images/al_list/h_22.png" alt="">
+                <h6>中国劳动关系学院</h6>
+                <p>以现代信息技术代替传统黑板，并加入互动直录播设备，不仅是对课堂环境的优化，更是互动教学的进步。</p>
+              </div>
+
             </li>
             <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+
+              <img class="showLines_liImg" src="../../../static/common/images/al_list/h_3.png" alt="">
+              <div class="showLines_liDiv">
+                <img class="imgsheed" src="../../../static/common/images/al_list/h_33.png" alt="">
+                <h6>湖南师范大学</h6>
+                <p>搭建双师互动系统、录播教室等设备，解决教师间的课堂互动交流问题。</p>
+              </div>
+
             </li>
           </ul>
 
           <h2>实训智慧教室解决方案</h2>
           <ul class="showLines">
             <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
-            </li>
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
-            </li>
-            <li>
-              <img src="../../../static/common/images/news1.png" alt="">
-              <h6>扶智海南，海南科技职业...</h6>
-              <p>又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···）的又一教学扶贫计划实现了。为帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市···</p>
-              <div class="lines"></div>
-              <div class="lines_bottom"></div>
+
+              <img class="showLines_liImg" src="../../../static/common/images/al_list/s_1.png" alt="">
+              <div class="showLines_liDiv">
+                <img class="imgsheed" src="../../../static/common/images/al_list/s_11.png" alt="">
+                <h6>海南科技职业学院</h6>
+                <p> 针对医护专业的师生打造实训智慧教室，成倍提高教师的师范教学效率，一个学期后，学生均能无盲点熟练掌握各种护理技能</p>
+              </div>
+
             </li>
           </ul>
 
         </div>
       </div>
 
-      <div class="hezuo"></div>
+      <div class="hezuo">
+        <h2>合作伙伴</h2>
+          <div class="hezuo_box w1200">
+            <!--<img src="" alt="">-->
+          </div>
+      </div>
 
     </div>
 
@@ -132,7 +144,7 @@
       return {}
     },
     mounted() {
-      this._jq();
+      // this._jq();
     },
     methods: {
       _jq() {
@@ -261,71 +273,91 @@
 
   .information_box ul{
     width: 100%;
-    height: 320px;
+    height: 382px;
     display: flex;
     justify-content: center;
     /*background: red;*/
   }
   .information_box ul li{
-    width: 220px;
-    height: 341px;
-    background: white;
-    padding: 10px;
+    width: 266px;
+    height: 382px;
     position: relative;
     box-shadow: 0px 2px 10px #888888;
-    margin-left:44px ;
     box-sizing: border-box;
     text-align: center;
+    transition: .5s;
   }
-  .information_box ul li img{
-    width: 177px;
-    height: 177px;
+  .showLines_liImg{
+    width: 100%;
+    height: 100%;
     background-size: cover;
-    margin-top: 10px;
-  }
-  .information_box ul li h6{
-    font-size: 15px;
-    color: #535353;
-    margin-bottom: 10px;
-  }
-  .information_box ul li p{
-    font-size: 16px;
-    color: #535353;
-    margin-bottom: 12px;
-    height: 88px;
-    width: 100%;
-    overflow: hidden;
-    /*white-space: nowrap;*/
-    text-overflow: ellipsis;
-  }
-  .lines{
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    background: #4081F4;
-    height: 1px;
-    width: 6px;
-  }
-  .lines_bottom{
-    width: 100%;
-    height: 6px;
-    background: #4081f4;
     position: absolute;
     left: 0;
-    bottom: 0;
-    display: none;
-    transition: .5s;
+    top: 0;
+    transition: .3s;
+  }
+  .information_box ul li:hover{
+    transform: scale(1.1);
+  }
+  .showLines_liDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*text-align: center;*/
+    padding: 0 31px;
+    box-sizing: border-box;
+    /*background: red;*/
+    /*z-index: 100;*/
+  }
+  .showLines_liDiv h6{
+    font-size: 17px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  .showLines_liDiv p{
+    font-size: 12px;
+    color: white;
+    text-align: left;
+  }
+
+  .imgsheed{
+    width: 78px;
+    height: 78px;
+    margin: 82px auto 28px auto ;
+  }
+
+  .sdsd{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin: 0!important;
+    cursor: pointer;
   }
  .hezuo{
    width: 100%;
    height: auto;
    overflow: hidden;
-   background: white;
-   background: white;
+   padding-bottom: 280px;
+ }
+ .hezuo h2{
+   font-size: 30px;
+   color: #545454;
+   text-align: center;
+   margin: 108px auto;
  }
   .hezuo h3{
     font-size: 30px;
     color: #454545;
     text-align: center;
+  }
+  .hezuo_box{
+    height: 691px;
+    background: url('../../../static/common/images/bg_logo.png') center white no-repeat;
   }
 </style>

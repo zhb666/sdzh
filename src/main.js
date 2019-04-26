@@ -15,6 +15,7 @@ import '../static/common/js/mian'
 
 import '../static/common/css/reset.css'
 import '../static/common/css/swiper.min.css'
+import '../static/common/css/imagehover.min.css'
 import 'animate.css'
 
 

@@ -18,13 +18,14 @@ import About from '@/components/pages/about'
 Vue.use(Router)
 
 export default new Router({
+  // mode: 'history',  //去掉url中的#
   routes: [
     {
       path: '/',
       name: 'MainPage',
       component: MainPage,
       meta: {
-        title: '首页'
+        title: '水滴智慧-首页'
       }
     },
     {
@@ -32,7 +33,7 @@ export default new Router({
       name: 'Solve',
       component: Solve,
       meta: {
-        title: '常态智慧'
+        title: '水滴智慧-常态智慧'
       }
     },
     {
@@ -40,7 +41,7 @@ export default new Router({
       name: 'Interaction',
       component: Interaction,
       meta: {
-        title: '互动智慧'
+        title: '水滴智慧-互动智慧'
       }
     },
     {
@@ -48,7 +49,7 @@ export default new Router({
       name: 'Train',
       component: Train,
       meta: {
-        title: '实训智慧'
+        title: '水滴智慧-实训智慧'
       }
     },
     {
@@ -56,7 +57,7 @@ export default new Router({
       name: 'ManyCj',
       component: ManyCj,
       meta: {
-        title: '多场景智慧'
+        title: '水滴智慧-多场景智慧'
       }
     },
     {
@@ -64,7 +65,7 @@ export default new Router({
       name: 'Campus',
       component: Campus,
       meta: {
-        title: '智慧校园'
+        title: '水滴智慧-智慧校园'
       }
     },
     {
@@ -72,7 +73,7 @@ export default new Router({
       name: 'Introduce',
       component: Introduce,
       meta: {
-        title: '产品介绍'
+        title: '水滴智慧-产品介绍'
       }
     },
     {
@@ -80,7 +81,7 @@ export default new Router({
       name: 'Download',
       component: Download,
       meta: {
-        title: '下载中心'
+        title: '水滴智慧-下载中心'
       }
     },
     {
@@ -88,7 +89,7 @@ export default new Router({
       name: 'Exhibition',
       component: Exhibition,
       meta: {
-        title: '案例展示'
+        title: '水滴智慧-案例展示'
       }
     },
     {
@@ -96,7 +97,7 @@ export default new Router({
       name: 'Information',
       component: Information,
       meta: {
-        title: '资讯中心'
+        title: '水滴智慧-资讯中心'
       }
     },
     {
@@ -104,7 +105,7 @@ export default new Router({
       name: 'InFoDetails',
       component: InFoDetails,
       meta: {
-        title: '资讯详情'
+        title: '水滴智慧-资讯详情'
       }
     },
     {
@@ -112,7 +113,7 @@ export default new Router({
       name: 'About',
       component: About,
       meta: {
-        title: '关于我们'
+        title: '水滴智慧-关于我们'
       }
     },
   ],
