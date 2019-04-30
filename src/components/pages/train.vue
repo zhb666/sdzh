@@ -74,9 +74,12 @@
               <div class="showLines_liDiv">
                 <img class="imgsheed" src="../../../static/common/images/al_list/s_11.png" alt="">
                 <h6>海南科技职业学院</h6>
-                <p> 针对医护专业的师生打造实训智慧教室，成倍提高教师的师范教学效率，一个学期后，学生均能无盲点熟练掌握各种护理技能</p>
+                <p> 针对医护专业的师生打造实训智慧教室，成倍提高教师的师范教学效率，一个学期后，学生均能无盲点熟练掌握各种护理技能。</p>
               </div>
 
+            </li>
+            <li>
+              <router-link to="/exhibition" tag="p"><img class="sdsd" src="../../../static/common/images/s_newsMord.png" alt=""></router-link>
             </li>
           </ul>
 
@@ -97,17 +100,13 @@
       }
     },
     mounted() {
-      // this._jq();
+      this._jq();
     },
     methods: {
       _jq() {
-        $('.showLines li').hover(function () {
-          $(this).addClass('animated bounce');
-          $('.lines_bottom').eq($(this).index()).show();
-        }, function () {
-          $(this).removeClass('animated bounce')
-          $('.lines_bottom').eq($(this).index()).hide();
-        })
+        $('.sdsd').on('click', function () {
+          $(document).scrollTop(0);
+        });
       },
     },
     computed: {

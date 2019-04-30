@@ -22,52 +22,54 @@
           <div class="down_pc">
             <h3>助学精灵（PC）</h3>
             <p>
-              更新日期：
-              <span>2019-04-01</span>
+              软件版本 ：
+              <span> V1.0.3</span>
             </p>
             <p>
-              版本：
-              <span style="margin-left: 35px">2019</span>
+              支持系统 ：
+              <span>WINDOWS 7  32位以上版本</span>
             </p>
             <p>
-              大小：
-              <span style="margin-left: 35px">2019M</span>
+              软件语言 ：
+              <span>简体中文</span>
             </p>
             <p>
-              兼容性：
-              <span style="margin-left: 16px">windows</span>
+              软件大小 ：
+              <span>30.5MB</span>
             </p>
             <p>
-              语言：
-              <span style="margin-left: 34px">中文</span>
+              开发公司 ：
+              <span>水滴智慧科技（深圳）有限公司</span>
             </p>
-            <div class="download_btn">点击下载</div>
+            <div class="download_btn">
+              <a href="https://sdzhofficialwebsite.oss-cn-shenzhen.aliyuncs.com/InstallPackagePC/AssistGenius-setup-1.0.2.exe">点击下载</a>
+            </div>
           </div>
 
-          <div class="down_pc" style="margin-top: 100px">
-            <h3>助学精灵（APP）</h3>
-            <p>
-              更新日期：
-              <span>2019-04-01</span>
-            </p>
-            <p>
-              版本：
-              <span style="margin-left: 35px">2019</span>
-            </p>
-            <p>
-              大小：
-              <span style="margin-left: 35px">2019M</span>
-            </p>
-            <p>
-              兼容性：
-              <span style="margin-left: 16px">windows</span>
-            </p>
-            <p>
-              语言：
-              <span style="margin-left: 34px">中文</span>
-            </p>
-            <div class="download_btn">点击下载</div>
-          </div>
+          <!--<div class="down_pc" style="margin-top: 100px">-->
+            <!--<h3>助学精灵（APP）</h3>-->
+            <!--<p>-->
+              <!--更新日期：-->
+              <!--<span>2019-04-01</span>-->
+            <!--</p>-->
+            <!--<p>-->
+              <!--版本：-->
+              <!--<span style="margin-left: 35px">2019</span>-->
+            <!--</p>-->
+            <!--<p>-->
+              <!--大小：-->
+              <!--<span style="margin-left: 35px">2019M</span>-->
+            <!--</p>-->
+            <!--<p>-->
+              <!--兼容性：-->
+              <!--<span style="margin-left: 16px">windows</span>-->
+            <!--</p>-->
+            <!--<p>-->
+              <!--语言：-->
+              <!--<span style="margin-left: 34px">中文</span>-->
+            <!--</p>-->
+            <!--<div class="download_btn">点击下载</div>-->
+          <!--</div>-->
 
         </div>
       </div>
@@ -238,5 +240,13 @@
     line-height: 38px;
     border-radius: 6px;
     cursor: pointer;
+    transition: color .3s;
   }
+  .download_btn a{
+    color: white;
+  }
+  .download_btn a:hover{
+    color: #ccc;
+  }
+
 </style>

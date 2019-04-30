@@ -81,11 +81,11 @@
         </div>
       </div>
 
-      <!--<div class="imgBtonns">-->
-        <!--<router-link to="/download" tag="p">-->
-          <!--<div>立即下载体验</div>-->
-        <!--</router-link>-->
-      <!--</div>-->
+      <div class="imgBtonns">
+        <router-link to="/download" tag="p">
+          <div>立即下载体验</div>
+        </router-link>
+      </div>
 
     </div>
 

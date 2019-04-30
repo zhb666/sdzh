@@ -19,9 +19,25 @@
         <div class="aboutListMian w1200">
 
           <h6 class="animated fadeInRightBig">企业品牌</h6>
-          <p>愿景：打造“互联网+教育”生态圈，让千万师生享受智慧教学</p>
-          <p>使命：用科技的力量改变传统教育方式</p>
-          <p>价值观：团结、勇敢、创新、挑战</p>
+
+          <ul class="listPintpai">
+            <li>
+              <img src="../../../static/common/images/p1.png" alt="">
+              <h6>愿景</h6>
+              <p>打造“互联网+教育”生态圈，让千万师生</p>
+              <p>享受智慧教学</p>
+            </li>
+            <li>
+              <img src="../../../static/common/images/p2.png" alt="">
+              <h6>使命</h6>
+              <p>用科技的力量改变传统教育方式</p>
+            </li>
+            <li>
+              <img src="../../../static/common/images/p3.png" alt="">
+              <h6>价值观</h6>
+              <p>团结、勇敢、创新、挑战</p>
+            </li>
+          </ul>
 
           <h6 class="animated fadeInRightBig">企业荣誉</h6>
           <ul class="aboutImgList">
@@ -50,6 +66,104 @@
         <div class="about_lishiMain w1200">
           <h6>发展历史</h6>
 
+          <div  class="about-history-list wow zoomIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;width: 1100px;margin: -60px auto;">
+            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+              <ul class="slides clearfix list" style="width: 2600%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2013.05</h3>
+                    <div class="desc">
+                      <p>
+                        公司成立
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2018.09</h3>
+                    <div class="desc">
+                      <p>
+                        建设海南科技职业学院智慧校园
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2018.09</h3>
+                    <div class="desc">
+                      <p>参展山西基础教育信息化展会</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2018.09</h3>
+                    <div class="desc">
+                      <p>成立安徽营销中心</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2018.10</h3>
+                    <div class="desc">
+                      <p>成立北京营销中心</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2018.11</h3>
+                    <div class="desc">
+                      <p>成立山西营销中心</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2019.02</h3>
+                    <div class="desc">
+                      <p>为海南乡村小学捐赠设备 </p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2019.03</h3>
+                    <div class="desc">
+                      <p>成立海南和东莞两地营销中心</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2019.03</h3>
+                    <div class="desc">
+                      <p>加入中国成协现代技工教育培训联盟</p>
+                    </div>
+                  </div>
+                </li>
+                <li style="width: 253px; float: left; display: block;">
+                  <div class="item">
+                    <h3>2019.03</h3>
+                    <div class="desc">
+                      <p>加入深圳市教育装备行业协会</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="flex-direction-nav">
+              <li class="flex-nav-prev">
+                <a class="flex-prev" href="javascript:;">
+                  &lt;
+                </a></li>
+              <li class="flex-nav-next"><a class="flex-next" href="javascript:;">></a></li>
+            </ul>
+          </div>
+
           <div class="about_lianxi">
             <ul>
               <li>
@@ -75,40 +189,6 @@
             </ul>
           </div>
         </div>
-        <!--<div class="about_line"></div>-->
-
-        <!--<div class="about_date about_s1">-->
-        <!--<h4>2013</h4>-->
-        <!--<p>公司成立</p>-->
-        <!--</div>-->
-        <!--<div class="about_date about_s2">-->
-        <!--<h4>2018</h4>-->
-        <!--<p>北京营销中心成立</p>-->
-        <!--</div>-->
-        <!--<div class="about_date about_s3">-->
-        <!--<h4>2018</h4>-->
-        <!--<p>负责海南科技职业学校</p>-->
-        <!--</div>-->
-        <!--<div class="about_date about_s4">-->
-        <!--<h4>2018</h4>-->
-        <!--<p>山西营销中心成立</p>-->
-        <!--</div>-->
-        <!--<div class="about_date about_s5">-->
-        <!--<h4>2018</h4>-->
-        <!--<p>东莞营销中心成立</p>-->
-        <!--</div>-->
-        <!--<div class="about_date about_s6">-->
-        <!--<h4>2018</h4>-->
-        <!--<p>进军智慧教育市场</p>-->
-        <!--</div>-->
-        <!--<div class="about_date about_s7">-->
-        <!--<h4>2018</h4>-->
-        <!--<p>山西展会</p>-->
-        <!--</div>-->
-        <!--<div class="about_date about_s8">-->
-        <!--<h4>2018</h4>-->
-        <!--<p>向海南小学捐赠</p>-->
-        <!--</div>-->
       </div>
 
 
@@ -130,7 +210,7 @@
 </template>
 
 <script>
-  // import '../../../static/common/js/plyr'
+  import '../../../static/common/js/jquery_flexslider'
   export default {
     name: 'Interaction',
     data() {
@@ -139,22 +219,20 @@
       }
     },
     mounted() {
-      this._jq();
       // plyr.setup();
+      $(function(){
+        if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))){
+          //phone
+        }else{
+          //PC
+          $(".about-history-list").flexslider({animation:"slide",slideshow:false,controlNav:false,itemWidth:253,itemMargin:31,prevText:"<",nextText:">",move:1});
+        }
+      });
     },
     methods: {
       videoFUn() {
         this.videoOFF = true;
         // plyr.setup();
-      },
-      _jq() {
-        $('.showLines li').hover(function () {
-          $(this).addClass('animated bounce');
-          $('.lines_bottom').eq($(this).index()).show();
-        }, function () {
-          $(this).removeClass('animated bounce')
-          $('.lines_bottom').eq($(this).index()).hide();
-        })
       },
     },
     computed: {
@@ -168,6 +246,7 @@
 
 <style scoped>
   @import url('../../../static/common/css/plyr.css');
+  @import url('../../../static/common/css/public.css');
 
   .video_box {
     width: 100%;
@@ -277,7 +356,7 @@
 
   .aboutList {
     width: 100%;
-    height: 1024px;
+    height: 1460px;
     background: url('../../../static/common/images/gy_listiMG1.png') no-repeat;
     overflow: hidden;
   }
@@ -290,12 +369,56 @@
     margin: 118px 0 30px 0;
   }
 
-  .aboutListMian > p {
-    font-size: 26px;
-    color: #373737;
-    font-family: ArialMT;
-    margin-left: 200px;
-    margin-top: 10px;
+  /*.aboutListMian > p {*/
+    /*font-size: 26px;*/
+    /*color: #373737;*/
+    /*font-family: ArialMT;*/
+    /*margin-left: 200px;*/
+    /*margin-top: 10px;*/
+  /*}*/
+  .listPintpai{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .listPintpai li{
+    width: 536px;
+    height: 670px;
+    background: #0D1818;
+    text-align: center;
+    overflow: hidden;
+  }
+  .listPintpai li img{
+     width: 536px;
+     height: 398px;
+     background-size: cover;
+    transition: .3s;
+   }
+  .listPintpai li h6{
+     font-size: 32px;
+     color: white;
+     margin: 64px 0 16px 0;
+     text-align: center;
+    font-family:PingFangSC-Medium;
+    transition: .3s;
+   }
+  .listPintpai li p{
+    font-size: 18px;
+    color: #BABABA;
+    line-height: 26px;
+    text-align: center;
+    transition: .3s;
+  }
+  .listPintpai li:hover img{
+    transform: scale(1.1);
+  }
+  .listPintpai li:hover h6{
+    color: #007aff;
+  }
+  .listPintpai li:hover p{
+    color: #007aff;
   }
 
   .aboutImgList {
@@ -303,13 +426,13 @@
     height: auto;
     overflow: hidden;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin-top: 60px;
   }
 
   .aboutImgList li {
-    width: 269px;
-    height: 398px;
+    width: 188px;
+    height: auto;
     margin-left: 16px;
   }
 
@@ -322,8 +445,8 @@
 
   .about_lishi {
     width: 100%;
-    height: 1282px;
-    background: url('../../../static/common/images/about_bgs.png') center no-repeat;
+    height: 1050px;
+    background: url('../../../static/common/images/about_bgs.png')  center top no-repeat;
     overflow: hidden;
     position: relative;
   }
@@ -337,7 +460,7 @@
     font-size: 39px;
     text-align: center;
     font-family: ArialMT;
-    margin: 75px 0 150px 0;
+    margin: 75px 0 20px 0;
   }
 
   .about_line {
@@ -412,7 +535,7 @@
     width: 100%;
     height: 380px;
     /*background: red;*/
-    margin-top: 680px;
+    margin-top: 80px;
   }
 
   .about_lianxi ul {
@@ -426,7 +549,7 @@
     width: 550px;
     height: 372px;
     border-radius: 8px;
-    background: rgba(64, 129, 244, .6);
+    background: rgba(64, 129, 244, .9);
     margin-right: 52px;
     position: relative;
     padding: 42px;

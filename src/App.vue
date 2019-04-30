@@ -124,6 +124,16 @@
               </li>
             </ul>
 
+            <ul>
+              <li class="stop_list">
+                <h3>案例展示</h3>
+                <router-link to="/exhibition" tag="p">常态教室</router-link>
+                <router-link to="/exhibition" tag="p">互动教室</router-link>
+                <router-link to="/exhibition" tag="p">实训教室</router-link>
+                <router-link to="/exhibition" tag="p">合作伙伴</router-link>
+              </li>
+            </ul>
+
             <!--<ul>-->
               <!--<li>-->
                 <!--<h3>服务支持</h3>-->
@@ -213,6 +223,21 @@
           $('html,body').animate({scrollTop: '0px'}, 800);
         })
 
+        $('.stop_list p').on('click',function () {
+          if($(this).index()==1){
+            $(document).scrollTop(962);
+          }
+          if($(this).index()==2){
+            $(document).scrollTop(1588);
+          }
+          if($(this).index()==3){
+            $(document).scrollTop(2228);
+          }
+          if($(this).index()==4){
+            $(document).scrollTop(3020);
+          }
+        })
+
       },
     },
 //    computed :{
@@ -296,6 +321,10 @@
     display: block;
   }
 
+  /*.headerBoxmenu li p:hover {*/
+    /*color: #007aff;*/
+  /*}*/
+
   .headerBox_center_R .active {
     border-bottom: 2px solid #fff;
   }
@@ -316,7 +345,7 @@
   }
 
   .footerBox_main_t ul {
-    margin-top: 50px;
+    margin-top: 34px;
     height: 100%;
   }
 
@@ -337,6 +366,10 @@
      opacity: .9;
     transition: .5s;
    }
+
+  .footerBox_main_t ul li p:hover{
+    color: #007aff;
+  }
 
   .footerBox_main_b {
     width: 100%;

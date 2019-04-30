@@ -118,8 +118,7 @@
 
             </li>
             <li>
-              <img class="sdsd" src="../../../static/common/images/s_newsMord.png" alt="">
-
+              <router-link to="/exhibition" tag="p"><img class="sdsd" src="../../../static/common/images/s_newsMord.png" alt=""></router-link>
             </li>
           </ul>
 
@@ -140,17 +139,14 @@
       }
     },
     mounted() {
-      // this._jq();
+      this._jq();
     },
     methods: {
       _jq() {
-        $('.showLines li').hover(function () {
-          $(this).addClass('animated bounce');
-          $('.lines_bottom').eq($(this).index()).show();
-        }, function () {
-          $(this).removeClass('animated bounce')
-          $('.lines_bottom').eq($(this).index()).hide();
-        })
+        //顶部点击位置变化
+        $('.sdsd').on('click', function () {
+          $(document).scrollTop(0);
+        });
       },
     },
     computed: {

@@ -15,22 +15,22 @@
           <el-carousel-item>
             <div class="lindong_box">
               <img class="boxl1s" src="../../../static/common/images/al/l1.png" alt="">
-              <p>我们医护专业因为有了实训智慧教室设备的辅助 不仅上课效率提高了，而且在一个学期后，学生 基本可以无盲点地熟练掌握各种护理技能</p>
+              <p>北校区的教师们使用水滴智慧设备上美术、建筑等专业课，教学效果特别好。他们的系统能兼容各种专业软件以方便授课、学习使用，并能自动实时录播，回放讲解、作品扫描投屏等等。</p>
               <div class="titleBoxcb">安徽建筑大学：</div>
             </div>
           </el-carousel-item>
           <el-carousel-item>
             <div class="lindong_box">
               <img class="boxl1s" src="../../../static/common/images/al/l2.png" alt="">
-              <p>我们医护专业因为有了实训智慧教室设备的辅助 不仅上课效率提高了，而且在一个学期后，学生 基本可以无盲点地熟练掌握各种护理技能</p>
+              <p>白板软件和互动系统的功能非常好用，在线直播课程一点都不卡，方便又高效。老师上课方便，效率提高了，学生的兴趣与学习效果也提升了。</p>
               <div class="titleBoxcb">深圳职业技术学院：</div>
             </div>
           </el-carousel-item>
           <el-carousel-item>
             <div class="lindong_box">
-              <img class="boxl1s" src="../../../static/common/images/al/l3.png" alt="">
-              <p>我们医护专业因为有了实训智慧教室设备的辅助 不仅上课效率提高了，而且在一个学期后，学生 基本可以无盲点地熟练掌握各种护理技能</p>
-              <div class="titleBoxcb">南昌理工学院：</div>
+              <img class="boxl1s" src="../../../static/common/images/al/l4.jpg" alt="">
+              <p>我们医护专业因为有了实训智慧教室设备的辅助，不仅上课效率提高了，而且在一个学期后，学生基本可以无盲点地熟练掌握各种护理技能。</p>
+              <div class="titleBoxcb">海南科技职业学院：</div>
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -56,8 +56,8 @@
               <img class="showLines_liImg" src="../../../static/common/images/al_list/c_2.png" alt="">
               <div class="showLines_liDiv">
                 <img class="imgsheed" src="../../../static/common/images/al_list/c_22.png" alt="">
-                <h6>海南省海口新埠中心小学</h6>
-                <p>国际化教学配备先进的信息化技术教学设备，让教学更显卓越质量</p>
+                <h6>山西省太岳中学</h6>
+                <p>从传统教学迈入信息化教学，改善师生教学环境，为教学提质减负。</p>
               </div>
 
             </li>
@@ -67,7 +67,7 @@
               <div class="showLines_liDiv">
                 <img class="imgsheed" src="../../../static/common/images/al_list/c_33.png" alt="">
                 <h6>合肥市常春藤实验学校</h6>
-                <p>花费与传统多媒体设备不相上下的成本 建立无尘化无辐射的教学环境，全面保护师生健康，并辅助提高教学效率，丰富教学内容，让学生学习更加积极有效。</p>
+                <p>花费与传统多媒体设备不相上下的成本，建立无尘化无辐射的教学环境，全面保护师生健康，并辅助提高教学效率，丰富教学内容，让学生学习更加积极有效。</p>
               </div>
 
             </li>
@@ -115,7 +115,7 @@
               <div class="showLines_liDiv">
                 <img class="imgsheed" src="../../../static/common/images/al_list/s_11.png" alt="">
                 <h6>海南科技职业学院</h6>
-                <p> 针对医护专业的师生打造实训智慧教室，成倍提高教师的师范教学效率，一个学期后，学生均能无盲点熟练掌握各种护理技能</p>
+                <p> 针对医护专业的师生打造实训智慧教室，成倍提高教师的师范教学效率，一个学期后，学生均能无盲点熟练掌握各种护理技能。</p>
               </div>
 
             </li>
@@ -148,13 +148,9 @@
     },
     methods: {
       _jq() {
-        $('.showLines li').hover(function () {
-          $(this).addClass('animated bounce');
-          $('.lines_bottom').eq($(this).index()).show();
-        }, function () {
-          $(this).removeClass('animated bounce')
-          $('.lines_bottom').eq($(this).index()).hide();
-        })
+        $(window).scroll(function(event){
+          console.log($(document).scrollTop())
+        });
       },
     },
     computed: {
@@ -242,13 +238,13 @@
   }
 
   .lindong_box p {
-    font-size: 9px;
+    font-size: 12px;
     color: #4081F4;
   }
   .titleBoxcb{
     width: 180px;
-    height: 42px;
-    line-height: 42px;
+    height: 36px;
+    line-height: 36px;
     text-align: center;
     background: #4d4d4d;
     font-size: 14px;

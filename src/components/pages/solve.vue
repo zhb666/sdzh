@@ -102,8 +102,8 @@
               <img class="showLines_liImg" src="../../../static/common/images/al_list/c_2.png" alt="">
               <div class="showLines_liDiv">
                 <img class="imgsheed" src="../../../static/common/images/al_list/c_22.png" alt="">
-                <h6>海南省海口新埠中心小学</h6>
-                <p>国际化教学配备先进的信息化技术教学设备，让教学更显卓越质量</p>
+                <h6>山西省太岳中学：</h6>
+                <p>从传统教学迈入信息化教学，改善师生教学环境，为教学提质减负。</p>
               </div>
 
             </li>
@@ -113,13 +113,12 @@
               <div class="showLines_liDiv">
                 <img class="imgsheed" src="../../../static/common/images/al_list/c_33.png" alt="">
                 <h6>合肥市常春藤实验学校</h6>
-                <p>花费与传统多媒体设备不相上下的成本 建立无尘化无辐射的教学环境，全面保护师生健康，并辅助提高教学效率，丰富教学内容，让学生学习更加积极有效。</p>
+                <p>花费与传统多媒体设备不相上下的成本, 建立无尘化无辐射的教学环境，全面保护师生健康，并辅助提高教学效率，丰富教学内容，让学生学习更加积极有效。</p>
               </div>
 
             </li>
             <li>
-              <img class="sdsd" src="../../../static/common/images/s_newsMord.png" alt="">
-
+              <router-link to="/exhibition" tag="p"><img class="sdsd" src="../../../static/common/images/s_newsMord.png" alt=""></router-link>
             </li>
           </ul>
 
@@ -140,17 +139,14 @@
       }
     },
     mounted() {
-      // this._jq();
+      this._jq();
     },
     methods: {
       _jq() {
-        $('.showLines li').hover(function () {
-          $(this).addClass('animated bounce');
-          $('.lines_bottom').eq($(this).index()).show();
-        }, function () {
-          $(this).removeClass('animated bounce')
-          $('.lines_bottom').eq($(this).index()).hide();
-        })
+        //顶部点击位置变化
+        $('.sdsd').on('click', function () {
+          $(document).scrollTop(0);
+        });
       },
     },
     computed: {
@@ -227,7 +223,7 @@
 
   .solve_imgListMian ul li {
     text-align: center;
-    margin: 80px 0 0 90px;
+    margin: 80px 70px 0 10px;
     color: #555;
     width: 312px;
   }

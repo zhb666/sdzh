@@ -98,6 +98,10 @@
         $(element).css('max-width','1180px')
       })
 
+      $('.newsBox').find('iframe').each(function (index,element) {
+        $(element).css({'width':'100%','height':'500px'})
+      })
+
     }
   }
 </script>

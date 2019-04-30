@@ -31,33 +31,33 @@
               <!--<div class="lines_bottom"></div>-->
             <!--</li>-->
 
-            <li class="showLines_li">
-              <div class="showLines_li_l">
-                <div class="title">
-                  <span>企业资讯 | </span>
-                  <span> 2019-04-25</span>
-                </div>
-                <h6 class="showLines_li_lH6">扶智海南，海南科技职业学院捐赠百万智慧教室设备</h6>
-                <p class="showLines_li_lTEXT">“两所小学12套智慧教室设备正式投入使用了！”2019年2月底，随着这令人激动的消息传来， 海南科技职业学院 （本科） （以下简称“海科院”）的又一教学扶贫计划实现了。 帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市美兰区新埠中心小学、保亭黎族苗族自治县响水镇毛岸学校签署捐赠协议，</p>
-              </div>
-              <div class="showLines_li_R">
-                <img src="../../../static/common/images/sx_bg.png" alt="">
-              </div>
-            </li>
-
-            <!--<li class="showLines_li" v-for="item in data" @click="getID(item.id)">>-->
+            <!--<li class="showLines_li">-->
               <!--<div class="showLines_li_l">-->
                 <!--<div class="title">-->
-                  <!--<span>{{item.type}} | </span>-->
-                  <!--<span> {{item.create_time}}</span>-->
+                  <!--<span>企业资讯 | </span>-->
+                  <!--<span> 2019-04-25</span>-->
                 <!--</div>-->
-                <!--<h6 class="showLines_li_lH6">{{item.title}}</h6>-->
-                <!--<p class="showLines_li_lTEXT">{{item.introduction}}</p>-->
+                <!--<h6 class="showLines_li_lH6">扶智海南，海南科技职业学院捐赠百万智慧教室设备</h6>-->
+                <!--<p class="showLines_li_lTEXT">“两所小学12套智慧教室设备正式投入使用了！”2019年2月底，随着这令人激动的消息传来， 海南科技职业学院 （本科） （以下简称“海科院”）的又一教学扶贫计划实现了。 帮助海南基础教育提升质量，强化基础教育设备与教学的融合，海科院分别与海口市美兰区新埠中心小学、保亭黎族苗族自治县响水镇毛岸学校签署捐赠协议，</p>-->
               <!--</div>-->
               <!--<div class="showLines_li_R">-->
-                <!--<img src="item.image" alt="">-->
+                <!--<img src="../../../static/common/images/sx_bg.png" alt="">-->
               <!--</div>-->
             <!--</li>-->
+
+            <li class="showLines_li" v-for="item in data" @click="getID(item.id)">
+              <div class="showLines_li_l">
+                <div class="title">
+                  <span>{{item.type}} | </span>
+                  <span> {{item.create_time}}</span>
+                </div>
+                <h6 class="showLines_li_lH6">{{item.title}}</h6>
+                <p class="showLines_li_lTEXT">{{item.introduction}}</p>
+              </div>
+              <div class="showLines_li_R">
+                <img :src="item.image" alt="">
+              </div>
+            </li>
 
 
           </ul>
@@ -66,7 +66,7 @@
             <el-pagination
               @current-change="handleCurrentChange"
               :current-page.sync="page"
-              :page-size="10"
+              :page-size="6"
               layout="prev, pager, next, jumper"
               :total="totalRecords">
             </el-pagination>
@@ -318,7 +318,7 @@
 
   .showLines li:hover{
     /*transform: scale(1.05);*/
-    background: #adaaaa;
+    background: #fff;
   }
 
   .showLines_li_l{
