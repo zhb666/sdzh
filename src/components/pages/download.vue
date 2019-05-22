@@ -23,7 +23,7 @@
             <h3>助学精灵（PC）</h3>
             <p>
               软件版本 ：
-              <span> V1.0.3</span>
+              <span> V1.0.5</span>
             </p>
             <p>
               支持系统 ：
@@ -42,7 +42,7 @@
               <span>水滴智慧科技（深圳）有限公司</span>
             </p>
             <div class="download_btn">
-              <a href="https://sdzhofficialwebsite.oss-cn-shenzhen.aliyuncs.com/InstallPackagePC/AssistGenius-setup-1.0.2.exe">点击下载</a>
+              <a href="https://sdzhofficialwebsite.oss-cn-shenzhen.aliyuncs.com/InstallPackagePC/AssistGenius-setup-latest.exe">点击下载</a>
             </div>
           </div>
 

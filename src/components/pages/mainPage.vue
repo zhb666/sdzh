@@ -128,7 +128,7 @@
       <!--地图-->
       <div class="Map_box">
         <div class="Map_boxMian w1200">
-          <h3>全国7大营销中心 : <span>深圳、北京、东莞、海南、武汉、安徽、山西</span></h3>
+          <h3>全国8大营销中心 : <span> 深圳、北京、东莞、海南、武汉、安徽、山西、广西</span></h3>
           <h3>逾两百家客户的选择 : <span>覆盖大中专院校、基础教育、教培机构、企业培训、职业技能培训等众多领域</span></h3>
           <!--<img src="../../../static/common/images/ditu.png" alt="">-->
           <div id="mChart" style="width: 1200px;height: 750px;"></div>
@@ -408,13 +408,16 @@
         };
 
         var data = [
-          {name: "北京", value: 200, address: '海淀区清华科技园玉泉慧谷10栋A座1楼'},
-          {name: "太原", value: 230, address: '太原市小店区平阳南路天鑫花园一单元1401'},
-          {name: "合肥", value: 200, address: '合肥市庐阳区颖上路505号领域花园1,2幢商261'},
-          {name: "东莞", value: 230, address: '南城区中天联科国际信息产业园8栋303'},
+          {name: "合肥", value: 250, address: '合肥市庐阳区颖上路505号领域花园1,2幢商261'},
+          {name: "东莞", value: 300, address: '南城区中天联科国际信息产业园8栋303'},
           {name: "武汉", value: 260, address: '武汉市洪山区鲁磨路306号中建大厦1902号'},
           {name: "深圳", value: 350, address: '南山区高新科技园虚拟大学院综合楼C区2楼202室'},
-          {name: "海口", value: 360, address: '海口市美兰区海南科技职业学院图书馆9楼'},
+          {name: "太原", value: 260, address: '太原市小店区平阳南路天鑫花园一单元1401'},
+          {name: "海口", value: 300, address: '海口市美兰区海南科技职业学院图书馆9楼'},
+          {name: "南宁", value: 240, address: '南宁市高新区科园大道科德路口远信大夏6楼605号'},
+          {name: "北京", value: 250, address: '海淀区清华科技园玉泉慧谷10栋A座1楼'},
+          // {name: "南昌", value: 200, address: ''},
+          // {name: "天津", value: 50, address: ''},
           // {name: "成都", value: 100,address:''},
 
         ];
@@ -505,7 +508,7 @@
               type: 'scatter',
               coordinateSystem: 'geo',
               data: convertData(data),
-              symbolSize: 10,
+              // symbolSize: 10,
               label: {
                 normal: {
                   formatter: '{b}',
@@ -528,7 +531,7 @@
               coordinateSystem: 'geo',
               data: convertData(data.sort(function (a, b) {
                 return b.value - a.value;
-              }).slice(0, 6)),
+              }).slice(0, 20)),
               symbolSize: function (val) {
                 return val[2] / 15;
               },
